@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Lorem Ipsum",
+    "image": "/images/pizza-royale.jpeg",
+    "description": "",
+    "category": "dessert",
+    "family": "bouvier"
+  },
+  {
+    "title": "Lorem Ipsum",
+    "image": "/images/pizza-royale.jpeg",
+    "description": "",
+    "category": "plat_principal",
+    "family": "alcover"
+  }
+]

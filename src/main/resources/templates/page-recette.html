@@ -47,22 +47,24 @@
   
   <!-- Recette List Section-->
   <div class="w3-row-padding">
-      
+    <div th:each="recipe : ${recipes}">
+
+
     <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" onclick="document.getElementById('id01').style.display='block'" tag-recette-cat="plat_principal" tag-recette-famille="bouvier">
+    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" onclick="document.getElementById('id01').style.display='block'" th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
         <div class="w3-display-container">
-            <img src="/images/pizza-royale.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <img th:src="${recipe.image}" alt="Norway" style="width:100%" class="w3-hover-opacity">
             <div class="w3-display-topright">
-                <span class="w3-tag w3-blue">Bouvier</span>
+                <span class="w3-tag w3-blue" th:text="${recipe.family}">Bouvier</span>
             </div>
             <div class="w3-display-topleft">
-                <span class="w3-tag w3-red">Plat principal</span>
+                <span class="w3-tag w3-red" th:text="${recipe.category}">Plat principal</span>
             </div>
         </div>
         
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b th:text="${recipe.title}">Lorem Ipsum</b></p>
+        <p th:text="${recipe.description}">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
 
@@ -70,16 +72,16 @@
       <div class="w3-modal-content">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img src="/images/pizza-royale.jpeg" alt="Norway" style="width:100%">
+            <img th:src="${recipe.image}" alt="Norway" style="width:100%">
             <div class="w3-display-bottomright">
-                <span class="w3-tag w3-blue">Bouvier</span>
+                <span class="w3-tag w3-blue" th:text="${recipe.family}">Bouvier</span>
             </div>
             <div class="w3-display-bottomleft">
-                <span class="w3-tag w3-red">Plat principal</span>
+                <span class="w3-tag w3-red" th:text="${recipe.category}">Plat principal</span>
             </div>
           </div>
           <div class="w3-container w3-white">
-            <p><b>Lorem Ipsum</b></p>
+            <p><b th:text="${recipe.title}">Lorem Ipsum</b></p>
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -95,78 +97,7 @@
       </div>
     </div>
     <!-- End of recipe-->
-    
-    <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" tag-recette-cat="plat_principal" tag-recette-famille="alcover">
-      <div class="w3-display-container">
-            <img src="/images/pizza-royale.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-display-topright">
-                <span class="w3-tag w3-blue">Alcover</span>
-            </div>
-            <div class="w3-display-topleft">
-                <span class="w3-tag w3-red">Plat principal</span>
-            </div>
-      </div>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
     </div>
-    <!-- End of recipe-->  
-      
-    <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" tag-recette-cat="dessert" tag-recette-famille="bouvier">
-      <div class="w3-display-container">
-            <img src="/images/pizza-royale.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity"/>
-            <div class="w3-display-topright">
-                <span class="w3-tag w3-blue">Bouvier</span>
-            </div>
-            <div class="w3-display-topleft">
-                <span class="w3-tag w3-red">Dessert</span>
-            </div>
-      </div>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <!-- End of recipe-->  
-      
-    <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" tag-recette-cat="dessert" tag-recette-famille="alcover">
-      <div class="w3-display-container">
-            <img src="/images/pizza-royale.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity"/>
-            <div class="w3-display-topright">
-                <span class="w3-tag w3-blue">Alcover</span>
-            </div>
-            <div class="w3-display-topleft">
-                <span class="w3-tag w3-red">Dessert</span>
-            </div>
-      </div>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <!-- End of recipe-->  
-      
-    <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" tag-recette-cat="sauce" tag-recette-famille="bouvier">
-      <div class="w3-display-container">
-            <img src="/images/pizza-royale.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity"/>
-            <div class="w3-display-topright">
-                <span class="w3-tag w3-blue">Bouvier</span>
-            </div>
-            <div class="w3-display-topleft">
-                <span class="w3-tag w3-red">Sauce</span>
-            </div>
-      </div>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <!-- End of recipe-->
       
   </div>
 </div>

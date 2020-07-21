@@ -1,15 +1,33 @@
 [
   {
+    "id": "dessert1",
     "title": "Lorem Ipsum",
     "image": "/images/pizza-royale.jpeg",
-    "description": "",
+    "description": "dessert des bouviers",
     "category": "dessert",
     "family": "bouvier"
   },
   {
+    "id": "plat1",
     "title": "Lorem Ipsum",
     "image": "/images/pizza-royale.jpeg",
-    "description": "",
+    "description": "plat principal des alcover",
+    "category": "plat_principal",
+    "family": "alcover"
+  },
+  {
+    "id": "plat1",
+    "title": "Lorem Ipsum",
+    "image": "/images/pizza-royale.jpeg",
+    "description": "plat principal des alcover",
+    "category": "plat_principal",
+    "family": "alcover"
+  },
+  {
+    "id": "plat1",
+    "title": "Lorem Ipsum",
+    "image": "/images/pizza-royale.jpeg",
+    "description": "plat principal des alcover",
     "category": "plat_principal",
     "family": "alcover"
   }

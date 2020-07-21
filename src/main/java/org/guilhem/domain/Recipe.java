@@ -1,6 +1,9 @@
 package org.guilhem.domain;
 
 public class Recipe {
+
+    private String id;
+
     private String title;
 
     private String image;
@@ -10,6 +13,14 @@ public class Recipe {
     private String category;
 
     private String family;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;

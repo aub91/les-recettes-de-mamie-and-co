@@ -1,34 +1,82 @@
 [
   {
     "id": "dessert1",
-    "title": "Lorem Ipsum",
+    "title": "Les gâteaux de mamie",
     "image": "/images/pizza-royale.jpeg",
-    "description": "dessert des bouviers",
     "category": "dessert",
-    "family": "bouvier"
+    "tags":[],
+    "family": "bouvier",
+    "recap-sheet": "/Recettes_pages/...",
+    "ingredients-lists": [
+      {
+        "title": "Pour la pâte feuilletée",
+        "ingredients": [
+          "3 oeufs", "Farine"
+        ]
+      },
+      {
+        "title": "Pour la sauce tomate",
+        "ingredients": [
+          "3 tomates", "Sel"
+        ]
+      }
+    ],
+    "quantite": "9 personnes",
+    "steps": [
+      {
+        "image": "/images/pizza-royale.jpeg",
+        "video": "",
+        "text": ""
+      },
+      {
+        "image": "/images/pizza-royale.jpeg",
+        "video": "",
+        "text": ""
+      }
+    ],
+    "chef_word": "Mot du chef personnalisé",
+    "videos": [
+      {
+        "title": "",
+        "src": "/videos/"
+      }
+    ]
   },
   {
-    "id": "plat1",
-    "title": "Lorem Ipsum",
+    "id": "dessert1",
+    "title": "Les gâteaux de mamie",
     "image": "/images/pizza-royale.jpeg",
-    "description": "plat principal des alcover",
-    "category": "plat_principal",
-    "family": "alcover"
-  },
-  {
-    "id": "plat1",
-    "title": "Lorem Ipsum",
-    "image": "/images/pizza-royale.jpeg",
-    "description": "plat principal des alcover",
-    "category": "plat_principal",
-    "family": "alcover"
-  },
-  {
-    "id": "plat1",
-    "title": "Lorem Ipsum",
-    "image": "/images/pizza-royale.jpeg",
-    "description": "plat principal des alcover",
-    "category": "plat_principal",
-    "family": "alcover"
+    "category": "dessert",
+    "tags":[],
+    "family": "bouvier",
+    "recap-sheet": "/Recettes_pages/...",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "3 oeufs", "Farine"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps": [
+      {
+        "image": "",
+        "video": "",
+        "text": ""
+      },
+      {
+        "image": "/images/pizza-royale.jpeg",
+        "video": "",
+        "text": ""
+      }
+    ],
+    "chef_word": "Mot du chef personnalisé",
+    "videos": [
+      {
+        "title": "",
+        "src": "/videos/"
+      }
+    ]
   }
 ]

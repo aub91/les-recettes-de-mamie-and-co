@@ -1,5 +1,8 @@
 package org.guilhem.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Recipe {
 
     private String id;

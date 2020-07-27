@@ -1,6 +1,9 @@
 package org.guilhem.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Recipe {
@@ -11,11 +14,26 @@ public class Recipe {
 
     private String image;
 
-    private String description;
+    private RecipeCategory category;
 
-    private String category;
+    private RecipeFamily family;
 
-    private String family;
+    private List<String> tags;
+
+    @JsonProperty("recap-sheet")
+    private String recapSheet;
+
+    @JsonProperty("ingredients-lists")
+    private List<IngredientList> ingredientListCollection;
+
+    private String quantite;
+
+    private List<RecipeStep> steps;
+
+    @JsonProperty("chef_word")
+    private String chefWord;
+
+    private List<Video> videos;
 
     public String getId() {
         return id;
@@ -41,27 +59,75 @@ public class Recipe {
         this.image = image;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getCategory() {
+    public RecipeCategory getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(RecipeCategory category) {
         this.category = category;
     }
 
-    public String getFamily() {
+    public RecipeFamily getFamily() {
         return family;
     }
 
-    public void setFamily(String family) {
+    public void setFamily(RecipeFamily family) {
         this.family = family;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
+
+    public String getRecapSheet() {
+        return recapSheet;
+    }
+
+    public void setRecapSheet(String recapSheet) {
+        this.recapSheet = recapSheet;
+    }
+
+    public List<IngredientList> getIngredientListCollection() {
+        return ingredientListCollection;
+    }
+
+    public void setIngredientListCollection(List<IngredientList> ingredientListCollection) {
+        this.ingredientListCollection = ingredientListCollection;
+    }
+
+    public String getQuantite() {
+        return quantite;
+    }
+
+    public void setQuantite(String quantite) {
+        this.quantite = quantite;
+    }
+
+    public List<RecipeStep> getSteps() {
+        return steps;
+    }
+
+    public void setSteps(List<RecipeStep> steps) {
+        this.steps = steps;
+    }
+
+    public String getChefWord() {
+        return chefWord;
+    }
+
+    public void setChefWord(String chefWord) {
+        this.chefWord = chefWord;
+    }
+
+    public List<Video> getVideos() {
+        return videos;
+    }
+
+    public void setVideos(List<Video> videos) {
+        this.videos = videos;
     }
 }

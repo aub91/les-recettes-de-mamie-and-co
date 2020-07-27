@@ -3,9 +3,9 @@
     "id": "dessert1",
     "title": "Les gâteaux de mamie",
     "image": "/images/pizza-royale.jpeg",
-    "category": "dessert",
+    "category": "DESSERT",
     "tags":[],
-    "family": "bouvier",
+    "family": "BOUVIER",
     "recap-sheet": "/Recettes_pages/...",
     "ingredients-lists": [
       {
@@ -46,9 +46,9 @@
     "id": "dessert1",
     "title": "Les gâteaux de mamie",
     "image": "/images/pizza-royale.jpeg",
-    "category": "dessert",
+    "category": "DESSERT",
     "tags":[],
-    "family": "bouvier",
+    "family": "BOUVIER",
     "recap-sheet": "/Recettes_pages/...",
     "ingredients-lists": [
       {

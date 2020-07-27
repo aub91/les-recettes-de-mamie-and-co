@@ -32,7 +32,7 @@
         <label>Dessert</label>
 
         <input class="w3-check" type="checkbox" onclick="switchCatTag(this,'sauce')">
-        <label>Sauces</label> 
+        <label>Sauce</label>
     </div>
       
     <!-- Family filter list -->
@@ -51,7 +51,7 @@
 
 
     <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" onclick="document.getElementById('id01').style.display='block'" th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
+    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" th:onclick="document.getElementById(${recipe.id}).style.display='block'" th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
         <div class="w3-display-container">
             <img th:src="${recipe.image}" alt="Norway" style="width:100%" class="w3-hover-opacity">
             <div class="w3-display-topright">
@@ -64,11 +64,10 @@
         
       <div class="w3-container w3-white">
         <p><b th:text="${recipe.title}">Lorem Ipsum</b></p>
-        <p th:text="${recipe.description}">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
 
-    <div id="id01" class="w3-modal">
+    <div th:id="${recipe.id}" class="w3-modal">
       <div class="w3-modal-content">
         <div class="w3-container">
           <div class="w3-display-container">
@@ -92,7 +91,7 @@
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>  
           </div>
-          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <span th:onclick="document.getElementById(${recipe.id}).style.display='none'" class="w3-button w3-display-topright">&times;</span>
         </div>
       </div>
     </div>

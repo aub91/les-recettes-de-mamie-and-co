@@ -1,6 +1,6 @@
 [
   {
-    "id": "dessert1",
+    "id": "gateau-de-mamie",
     "title": "Les gâteaux de mamie",
     "image": "/images/pizza-royale.jpeg",
     "category": "DESSERT",
@@ -43,10 +43,10 @@
     ]
   },
   {
-    "id": "dessert1",
-    "title": "Les gâteaux de mamie",
+    "id": "ragout-de-pommes-de-terre",
+    "title": "Ragout de pomme de terre",
     "image": "/images/pizza-royale.jpeg",
-    "category": "DESSERT",
+    "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
     "recap-sheet": "/Recettes_pages/...",

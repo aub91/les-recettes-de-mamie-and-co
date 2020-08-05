@@ -51,14 +51,17 @@
 
 
     <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card" th:onclick="document.getElementById(${recipe.id}).style.display='block'" th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
+    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card"
+         th:data-popupid="${recipe.id}"
+         th:onclick="document.getElementById(this.getAttribute('data-popupid')).style.display='block'"
+         th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
         <div class="w3-display-container">
             <img th:src="${recipe.image}" alt="Norway" style="width:100%" class="w3-hover-opacity">
             <div class="w3-display-topright">
-                <span class="w3-tag w3-blue" th:text="${recipe.family}">Bouvier</span>
+                <span class="w3-tag w3-blue" th:text="${recipe.family.label}">Bouvier</span>
             </div>
             <div class="w3-display-topleft">
-                <span class="w3-tag w3-red" th:text="${recipe.category}">Plat principal</span>
+                <span class="w3-tag w3-red" th:text="${recipe.category.label}">Plat principal</span>
             </div>
         </div>
         
@@ -73,10 +76,10 @@
           <div class="w3-display-container">
             <img th:src="${recipe.image}" alt="Norway" style="width:100%">
             <div class="w3-display-bottomright">
-                <span class="w3-tag w3-blue" th:text="${recipe.family}">Bouvier</span>
+                <span class="w3-tag w3-blue" th:text="${recipe.family.label}">Bouvier</span>
             </div>
             <div class="w3-display-bottomleft">
-                <span class="w3-tag w3-red" th:text="${recipe.category}">Plat principal</span>
+                <span class="w3-tag w3-red" th:text="${recipe.category.label}">Plat principal</span>
             </div>
           </div>
           <div class="w3-container w3-white">
@@ -91,7 +94,9 @@
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>  
           </div>
-          <span th:onclick="document.getElementById(${recipe.id}).style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <span th:data-popupid="${recipe.id}"
+                th:onclick="document.getElementById(this.getAttribute('data-popupid')).style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
         </div>
       </div>
     </div>

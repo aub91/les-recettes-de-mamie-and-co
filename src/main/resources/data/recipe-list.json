@@ -24,8 +24,8 @@
     "quantite": "9 personnes",
     "steps": [
       {
-        "image": "/images/pizza-royale.jpeg",
-        "video": "",
+        "image": "",
+        "video": "/videos/test.mp4",
         "text": "Ajouter de la farine"
       },
       {

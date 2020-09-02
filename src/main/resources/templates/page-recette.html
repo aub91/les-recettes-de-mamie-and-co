@@ -25,22 +25,22 @@
       
       <!-- Category filter list -->
       <div class="w3-container w3-display-left" id="cat-filters">
-        <input class="w3-check" type="checkbox" onclick="switchCatTag(this,'plat_principal')">
+        <input class="w3-check" type="checkbox" onclick="switchCatTag(this,'PLAT_PRINCIPAL')">
         <label>Plat principal</label>
 
-        <input class="w3-check" type="checkbox" onclick="switchCatTag(this,'dessert')">
+        <input class="w3-check" type="checkbox" onclick="switchCatTag(this,'DESSERT')">
         <label>Dessert</label>
 
-        <input class="w3-check" type="checkbox" onclick="switchCatTag(this,'sauce')">
+        <input class="w3-check" type="checkbox" onclick="switchCatTag(this,'SAUCE')">
         <label>Sauce</label>
     </div>
       
     <!-- Family filter list -->
     <div class="w3-container w3-display-right" id="family-filters">
-        <input class="w3-check" type="checkbox" onclick="switchFamilyTag(this,'bouvier')">
+        <input class="w3-check" type="checkbox" onclick="switchFamilyTag(this,'BOUVIER')">
         <label>Bouvier</label>
 
-        <input class="w3-check" type="checkbox" onclick="switchFamilyTag(this,'alcover')">
+        <input class="w3-check" type="checkbox" onclick="switchFamilyTag(this,'ALCOVER')">
         <label>Alcover</label>
     </div>    
   </div>    
@@ -70,6 +70,7 @@
       </div>
     </div>
 
+    <!-- Beginning of modal -->
     <div th:id="${recipe.id}" class="w3-modal">
       <div class="w3-modal-content">
         <div class="w3-container">
@@ -83,7 +84,25 @@
             </div>
           </div>
           <div class="w3-container w3-white">
-            <p><b th:text="${recipe.title}">Lorem Ipsum</b></p>
+            <h2><b th:text="${recipe.title}">Lorem Ipsum</b></h2>
+            <a th:if="${recipe.recapSheet} != ''" th:href="${recipe.recapSheet}" target="_blank">Fiche pdf</a>
+            <div id="chef-word-panel" class="w3-panel w3-cyan w3-xlarge w3-serif" th:if="${recipe.chefWord} != ''">
+                <p><i th:text="'&quot;' + ${recipe.chefWord} + '&quot;'">"Make it as simple as possible, but not simpler."</i></p>
+            </div>
+            <h3><u>Quantité:</u><span th:text="' ' + ${recipe.quantite}"></span></h3>
+            <div id="ingredients-lists">
+                <h3><u>Liste des ingrédients:</u></h3>
+                <div th:each="ingredientList : ${recipe.ingredientListCollection}">
+                    <div>
+                        <h4 th:text="${ingredientList.title + ':'}"></h4>
+                        <ul class="w3-ul" th:each="ingredient : ${ingredientList.ingredients}">
+                            <li th:text="${ingredient}"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3><u>Etapes:</u></h3>
             <ul class="w3-ul" th:each="step, iStat : ${recipe.steps}">
                 <li>
                     <div>

@@ -13,7 +13,7 @@ public class IngredientList {
     private String title;
 
     /**
-     * The lsit of ingredients.
+     * The list of ingredients.
      */
     private List<String> ingredients;
 

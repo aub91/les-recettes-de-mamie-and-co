@@ -47,8 +47,8 @@
     "chef_word": "Mot du chef personnalisé",
     "videos": [
       {
-        "title": "",
-        "src": "/videos/"
+        "title": "i am a video",
+        "src": "/videos/test.mp4"
       }
     ]
   },
@@ -62,7 +62,7 @@
     "recap-sheet": "/Recettes_pages/...",
     "ingredients-lists": [
       {
-        "title": "",
+        "title": "Pour la sauce",
         "ingredients": [
           "3 oeufs", "Farine"
         ]
@@ -73,19 +73,19 @@
       {
         "image": "",
         "video": "",
-        "text": ""
+        "text": "I am step 1"
       },
       {
         "image": "/images/pizza-royale.jpeg",
         "video": "",
-        "text": ""
+        "text": "I am step 2"
       }
     ],
     "chef_word": "Mot du chef personnalisé",
     "videos": [
       {
         "title": "",
-        "src": "/videos/"
+        "src": ""
       }
     ]
   }

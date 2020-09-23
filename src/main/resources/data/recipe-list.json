@@ -1,50 +1,66 @@
 [
   {
-    "id": "gateau-de-mamie",
-    "title": "Les gâteaux de mamie",
+    "id": "boulettes",
+    "title": "Les boulettes",
     "image": "/images/pizza-royale.jpeg",
-    "category": "DESSERT",
+    "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
     "recap-sheet": "/recap-sheets/test.pdf",
     "ingredients-lists": [
       {
-        "title": "Pour la pâte feuilletée",
+        "title": "",
         "ingredients": [
-          "3 oeufs", "Farine"
-        ]
-      },
-      {
-        "title": "Pour la sauce tomate",
-        "ingredients": [
-          "3 tomates", "Sel"
+          "Une grosse gousse d’ail", "Une dizaine de branches de Persil", "500g de viande hachée (24 petites boulettes)",
+          "Un morceau de pain rassi", "Un petit bol de lait", "Un oeuf", "Du sel", "Du poivre pour ceux qui aiment",
+          "De la farine", "De l’huile"
         ]
       }
     ],
-    "quantite": "9 personnes",
+    "quantite": "4 personnes",
     "steps": [
       {
         "image": "",
         "video": "/videos/test.mp4",
-        "text": "Ajouter de la farine"
+        "text": "Commencer par faire une persillade en mélangeant le persil ciselé et l’ail finement haché. Réserver."
       },
       {
         "image": "/images/pizza-royale.jpeg",
         "video": "",
-        "text": "Faire fondre du beurre"
+        "text": "Découper le pain rassis en petits morceaux et les faire tremper dans le lait pour bien les ramollir."
       },
       {
-        "image": "/images/pizza-royale.jpeg",
+        "image": "",
         "video": "",
-        "text": "Mélanger le tout"
+        "text": "Dans un saladier, mélanger le pain bien essoré avec la viande hachée, puis faites y un puit."
       },
       {
-        "image": "/images/pizza-royale.jpeg",
+        "image": "",
         "video": "",
-        "text": "Mettez la préparation dans un moule. Enfournez à 180°C et laissez cuire pendant 35 minutes."
+        "text": "Dans ce dernier y verser l’oeuf et la persillade, mélangez les avec un doigt."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Une fois l’oeuf bien battu avec le persil et l’ail, saler et poivrer puis mélanger le tout."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Formez les boulettes en roulant une petite quantité de viande entre vos mains, les fariner."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Dans une poêle créer un bain d’huile. Une fois l’huile bien chaude (il faut pouvoir la voir ou l’entendre crépiter) faire frire les boulettes."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Une fois bien cuites les déposer sur du papier absorbant. "
       }
     ],
-    "chef_word": "Mot du chef personnalisé",
+    "chef_word": "Les boulettes de mamie sont à déguster avec une sauce tomate et du riz ou des pâtes ! <br/>Petit tips de la cuisinière : si votre huile devient trop chaude, baissez le feu et rajoutez de l’huile, ça refroidira le contenu de la poêle ! <br/><br/>Bon appetit !",
     "videos": [
       {
         "title": "i am a video",
@@ -53,18 +69,18 @@
     ]
   },
   {
-    "id": "ragout-de-pommes-de-terre",
-    "title": "Ragout de pomme de terre",
+    "id": "gateaux-de-mamie",
+    "title": "Les gâteaux de Mamie",
     "image": "/images/pizza-royale.jpeg",
-    "category": "PLAT_PRINCIPAL",
+    "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
     "recap-sheet": "/Recettes_pages/...",
     "ingredients-lists": [
       {
-        "title": "Pour la sauce",
+        "title": "",
         "ingredients": [
-          "3 oeufs", "Farine"
+          "Farine", "3 oeufs", "6 cas de sucre", "62,5g de beurre", "1/2 sachet de levure chimique"
         ]
       }
     ],
@@ -73,20 +89,78 @@
       {
         "image": "",
         "video": "",
-        "text": "I am step 1"
+        "text": "Préchauffer le four à 180°C"
       },
       {
-        "image": "/images/pizza-royale.jpeg",
+        "image": "",
         "video": "",
-        "text": "I am step 2"
+        "text": "Bien battre les oeufs en omelette, y ajouter le beurre fondu au micro onde, puis le sucre, et enfin la farine et la levure. Il faut mettre autant de farine que le mélange en absorbe."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Constituer des petites boules de pâte à l’aide d’une cuillère à soupe et d’une cuillère à café, bien les espacer sur une plaque (utiliser la lèchefrite pour ne pas avoir la marque de la grille)."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Enfourner pour 15 à 20 minutes."
       }
     ],
-    "chef_word": "Mot du chef personnalisé",
-    "videos": [
+    "chef_word": "Pour les rendre plus gourmand, mamie les saupoudrait de morceaux de sucre. Aujourd’hui ils sont un peu plus compliqué à trouver, vous pouvez utiliser la méthode Monique-Aurélie qui consiste à casser de gros morceaux ou alors saupoudrez les de sucre fin. <br/>On note aussi que Mamie utilisait de la farine à gâteaux levante. Je pense que ça n’existe plus, mais si un jour ça revient sachez que c’était la recette originale, vous pourrez donc remplacer farine et levure par la farine levante. <br/><br/>Ces petits gâteaux se conservent très bien et régaleront les enfants et les grands comme quand nous étions plus jeunes.",
+    "videos": []
+  },
+  {
+    "id": "gateau-au-yaourt",
+    "title": "Le gâteau au yaourt",
+    "image": "/images/pizza-royale.jpeg",
+    "category": "DESSERT",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "/Recettes_pages/...",
+    "ingredients-lists": [
       {
         "title": "",
-        "src": ""
+        "ingredients": [
+          "1 yaourt", "2 pots à yaourt de sucre", "3 pots à yaourt de farine", "3 oeufs",
+          "1/2 sachet de levure chimique", "1/2 pot de yaourt d'huile de colza", "Une plaquette de chocolat noir"
+        ]
       }
-    ]
+    ],
+    "quantite": "",
+    "steps": [
+      {
+        "image": "",
+        "video": "",
+        "text": "Préchauffer le four à 180°C"
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Dans un saladier, commencer par bien mélanger le yaourt avec le sucre."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Y ajouter un pot de farine et un oeuf, mélanger énergiquement. Puis répéter l’opération deux fois. Dans le dernier pot de farine, au milieu incorporer la levure."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Ajouter l’huile."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Enfourner pour 25 minutes."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Faire fondre le chocolat et recouvrir le gâteaux."
+      }
+    ],
+    "chef_word": "On sait tous que pour vérifier si le gâteau est cuit, il faut planter un couteau au centre et si la lame ressort propre c’est que c’est bon ! <br/><br/>Mamie me disait que si ma pate faisait des petites bulles c’est qu’elle était bien. <br/><br/>Bien entendu, on peut y rajouter des petites touches perso. Marif vous dira qu’avec quelques gouttes d’extrait d’amande amer c’est excellent. Pour Juju, on rajoute un sachet de sucre vanillé (ou de la vanille sous n’importe quelle forme d’ailleurs). <br/><br/>Enfin si vous voulez faire le gâteau d'anniversaire de Fanny, il vous faut un glaçage à la crème fraîche et au sucre glace. Pour cela, munissez-vous d’une cuillère à café de crème fraîche épaisse et mélangez la avec du sucre glace. Il faut mettre assez de sucre glace pour que le mélange ne soit pas trop liquide. Le glaçage se fait sur un gâteau froid sinon il fond. Il vous faudra aussi des smarties, des chamallow et un moule en forme de clown.",
+    "videos": []
   }
 ]

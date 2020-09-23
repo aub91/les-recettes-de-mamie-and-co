@@ -98,12 +98,12 @@
           <div class="w3-container w3-white">
             <h2><b th:text="${recipe.title}">Lorem Ipsum</b></h2>
             <a th:if="${recipe.recapSheet} != ''" th:href="${recipe.recapSheet}" target="_blank">Fiche pdf</a>
-            <h3><u>Quantité:</u><span th:text="' ' + ${recipe.quantite}"></span></h3>
+            <h3 th:if="${recipe.quantite} != ''"><u>Quantité:</u><span th:text="' ' + ${recipe.quantite}"></span></h3>
             <div id="ingredients-lists">
                 <h3><u>Liste des ingrédients:</u></h3>
                 <div th:each="ingredientList : ${recipe.ingredientListCollection}">
                     <div>
-                        <h4 th:text="${ingredientList.title + ':'}"></h4>
+                        <h4 th:if="${ingredientList.title} != ''" th:text="${ingredientList.title + ':'}"></h4>
                         <ul class="w3-ul" th:each="ingredient : ${ingredientList.ingredients}">
                             <li th:text="${ingredient}"></li>
                         </ul>
@@ -114,8 +114,8 @@
             <h3><u>Etapes:</u></h3>
             <ul class="w3-ul" th:each="step, iStat : ${recipe.steps}">
                 <li>
-                    <div>
-                        <span class="w3-badge w3-green" th:text="${iStat.count}"></span><span th:text="${step.text}"/>
+                    <div class="w3-margin-bottom">
+                        <span class="w3-badge w3-green" th:text="${iStat.count}"></span><span class="w3-margin-left" th:text="${step.text}"/>
                     </div>
                     <div th:if="${step.image != ''}">
                         <img th:src="${step.image}" alt="Norway" style="width:100%">
@@ -128,7 +128,7 @@
                 </li>
             </ul>
             <div id="chef-word-panel" class="w3-panel w3-cyan w3-xlarge w3-serif" th:if="${recipe.chefWord} != ''">
-                <p><i th:text="'&quot;' + ${recipe.chefWord} + '&quot;'">"Make it as simple as possible, but not simpler."</i></p>
+                <p><i th:utext="'&quot;' + ${recipe.chefWord} + '&quot;'">"Make it as simple as possible, but not simpler."</i></p>
             </div>
             <div th:if="${recipe.videos.size() != 0}">
                 <h3><u>Vidéos:</u></h3>

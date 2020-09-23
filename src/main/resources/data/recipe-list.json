@@ -162,5 +162,225 @@
     ],
     "chef_word": "On sait tous que pour vérifier si le gâteau est cuit, il faut planter un couteau au centre et si la lame ressort propre c’est que c’est bon ! <br/><br/>Mamie me disait que si ma pate faisait des petites bulles c’est qu’elle était bien. <br/><br/>Bien entendu, on peut y rajouter des petites touches perso. Marif vous dira qu’avec quelques gouttes d’extrait d’amande amer c’est excellent. Pour Juju, on rajoute un sachet de sucre vanillé (ou de la vanille sous n’importe quelle forme d’ailleurs). <br/><br/>Enfin si vous voulez faire le gâteau d'anniversaire de Fanny, il vous faut un glaçage à la crème fraîche et au sucre glace. Pour cela, munissez-vous d’une cuillère à café de crème fraîche épaisse et mélangez la avec du sucre glace. Il faut mettre assez de sucre glace pour que le mélange ne soit pas trop liquide. Le glaçage se fait sur un gâteau froid sinon il fond. Il vous faudra aussi des smarties, des chamallow et un moule en forme de clown.",
     "videos": []
+  },
+  {
+    "id": "flan-caramel",
+    "title": "Flan au caramel",
+    "image": "/images/pizza-royale.jpeg",
+    "category": "DESSERT",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "/Recettes_pages/...",
+    "ingredients-lists": [
+      {
+        "title": "Pour le caramel",
+        "ingredients": [
+          "11 à 12 morceaux de sucre Saint Louis n°4", "Eau"
+        ]
+      },
+      {
+        "title": "Pour le flan",
+        "ingredients": [
+          "6 oeufs", "1 grande boite de lait Gloria entier", "1 grande boite d'eau", "24 à 25 morceaux de sucre",
+          "1 gousse de vanille"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps": [
+      {
+        "image": "",
+        "video": "",
+        "text": "Commencer par faire le caramel"
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Mouiller les morceau de sucre, le mettre dans un casserole avec un peu d’eau au fond."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Mettre à feu vif : le sucre devient caramel liquide."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Faire passer le caramel sur les bord de la casserole pour bien récupérer le sucre qui s’y est déposé."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Verser rapidement le caramel dans le fond du moule à flan (ou le récipient qui ira au four) puis le faire monter sur les bords tant qu’il est liquide. Le geste doit être rapide car le caramel refroidit vite."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Passer au flan"
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Préchauffer le four à 200° C"
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Battre énergiquement et longuement les oeufs en omelette à l’aide d’une cuillère magique (à défaut avec un fouet)."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Faire infuser la gousse de vanille (après l’avoir ouverte en deux dans le sens de la longueur) en faisant chauffer le lait avec les 25 morceaux de sucres en remuant pour les faire fondre."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Oter la gousse de vanille et verser le lait sucré sur les oeufs tout en battant énergiquement."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Verser le mélange dans le moule caramélisé sans cesser de le battre dans le saladier."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Cuire au bain marie 40 minutes."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Laisser refroidir avant de déguster ! "
+      }
+    ],
+    "chef_word": "",
+    "videos": []
+  },
+  {
+    "id": "tarte-bourdaloue",
+    "title": "Tarte Bourdaloue",
+    "image": "/images/pizza-royale.jpeg",
+    "category": "DESSERT",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "/Recettes_pages/...",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "Pâte brisée", "3 à 4 grosses poires"
+        ]
+      },
+      {
+        "title": "Pour la crème pâtissière",
+        "ingredients": [
+          "20 cl de lait", "1 jaune d'oeuf", "50g de sucre", "10g de farine", "10g de maizena",
+          "Extrait de vanille, gousse ou sucre vanillé"
+        ]
+      },
+      {
+        "title": "Pour la crème d'amande",
+        "ingredients": [
+          "75g de beurre", "100g de sucre", "100g de poudre d'amande", "1 oeuf",
+          "(facultatif) 1/2 bouchon de rhum ou de kirsch"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps": [
+      {
+        "image": "",
+        "video": "",
+        "text": "Commencer par préparer la crème pâtissière"
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Porter à ébullition sur un feu moyen 17cl de lait avec la vanille fendue dans le sens de la longueur dans une casserole préalablement humidifiée pour éviter que le lait accroche."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Blanchir le jaune avec le sucre à la fourchette."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Ajouter la farine et la maïzena tamisées puis le lait restant froid. Bien mélanger jusqu'à ce que l’appareil soit lisse."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Ajouter en remuant un tiers du lait, puis un second tiers."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "S’assurer que le lait n’ait pas accroché et remettre le tout sur un feu moyen vif."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Remuer énergiquement jusqu'à ce que le mélange prenne et durcisse (pendant environ 45 seconde selon le feu)."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Verser la crème dans un récipient en inox ou en pyrex pour accélérer le refroidissement. Il est possible de déposer la crème dans un récipient plongé dans de l’eau froide."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Préparer la crème d’amande"
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Ramollir le beurre et le réduire en pommade."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Ajouter le sucre, la poudre d’amande et l’oeuf."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Bien mélanger pour rendre la crème homogène. On peut y ajouter un demi bouchon de rhum ou de kirsch."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Mélanger les deux crèmes."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Déposer la pâte brisée dans un moule à tarte, piquer le fond."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Déposer une fine couche du mélange sur le fond (environ ⅓)."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Disposer les poires harmonieusement."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Les napper avec le reste du mélange."
+      },
+      {
+        "image": "",
+        "video": "",
+        "text": "Enfourner pour 40 minutes."
+      }
+    ],
+    "chef_word": "Le chef recommande cette version de la tarte, mais la vraie recette conseille de rajouter des amandes effilées avant d’enfourner et rien ne précise qu’il est interdit d’ajouter des pépites de chocolats.<br/><br/>Les poires conférences sont très adaptées.",
+    "videos": []
   }
 ]

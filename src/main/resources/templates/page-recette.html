@@ -65,7 +65,7 @@
     <!-- Beginning of recipe-->  
     <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card"
          th:data-popupid="${recipe.id}"
-         th:onclick="document.getElementById(this.getAttribute('data-popupid')).style.display='block'"
+         th:onclick="openModal(this.getAttribute('data-popupid'))"
          th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
         <div class="w3-display-container">
             <img th:src="${recipe.image}" alt="Norway" style="width:100%" class="w3-hover-opacity">
@@ -99,21 +99,22 @@
             <h2><b th:text="${recipe.title}">Lorem Ipsum</b></h2>
             <a th:if="${recipe.recapSheet} != ''" th:href="${recipe.recapSheet}" target="_blank">Fiche pdf</a>
             <h3 th:if="${recipe.quantite} != ''"><u>Quantité:</u><span th:text="' ' + ${recipe.quantite}"></span></h3>
+            <hr/>
             <div id="ingredients-lists">
                 <h3><u>Liste des ingrédients:</u></h3>
                 <div th:each="ingredientList : ${recipe.ingredientListCollection}">
                     <div>
                         <h4 th:if="${ingredientList.title} != ''" th:text="${ingredientList.title + ':'}"></h4>
-                        <ul class="w3-ul" th:each="ingredient : ${ingredientList.ingredients}">
-                            <li th:text="${ingredient}"></li>
+                        <ul class="w3-ul">
+                            <li th:text="${ingredient}" th:each="ingredient : ${ingredientList.ingredients}"></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
+            <hr/>
             <h3><u>Etapes:</u></h3>
-            <ul class="w3-ul" th:each="step, iStat : ${recipe.steps}">
-                <li>
+            <ul class="w3-ul">
+                <li th:each="step, iStat : ${recipe.steps}">
                     <div class="w3-margin-bottom">
                         <span class="w3-badge w3-green" th:text="${iStat.count}"></span><span class="w3-margin-left" th:text="${step.text}"/>
                     </div>
@@ -127,7 +128,8 @@
                     </div>
                 </li>
             </ul>
-            <div id="chef-word-panel" class="w3-panel w3-cyan w3-xlarge w3-serif" th:if="${recipe.chefWord} != ''">
+
+            <div id="chef-word-panel" class="w3-panel w3-border w3-round-xxlarge w3-serif w3-border-orange" th:if="${recipe.chefWord} != ''">
                 <p><i th:utext="'&quot;' + ${recipe.chefWord} + '&quot;'">"Make it as simple as possible, but not simpler."</i></p>
             </div>
             <div th:if="${recipe.videos.size() != 0}">
@@ -166,6 +168,21 @@
 
 <!-- JS Script Section. DO NOT TOUCH ! -->
 <script type="text/JavaScript">
+
+// Get the modal
+var activeModal;
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == activeModal) {
+        activeModal.style.display = "none";
+    }
+};
+
+function openModal(modalId) {
+    activeModal = document.getElementById(modalId)
+    activeModal.style.display='block'
+}
 
 activeCatTagList=[];
 activeFamilyTagList=[];
@@ -244,4 +261,5 @@ function mustBeDiplayed(recipe){
     }
     return catOK && familyOK;
 }
+
 </script>

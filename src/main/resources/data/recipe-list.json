@@ -237,7 +237,7 @@
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
-    "recap-sheet": "/recap-sheets/test.pdf",
+    "recap-sheet": "",
     "ingredients-lists": [
       {
         "title": "",
@@ -255,7 +255,7 @@
         "steps": [
           {
             "image": "",
-            "video": "/videos/test.mp4",
+            "video": "",
             "text": "Commencer par faire une persillade en mélangeant le persil ciselé et l’ail finement haché. Réserver."
           },
           {
@@ -312,7 +312,7 @@
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
-    "recap-sheet": "/Recettes_pages/...",
+    "recap-sheet": "",
     "ingredients-lists": [
       {
         "title": "",
@@ -360,7 +360,7 @@
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
-    "recap-sheet": "/Recettes_pages/...",
+    "recap-sheet": "",
     "ingredients-lists": [
       {
         "title": "",
@@ -419,7 +419,7 @@
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
-    "recap-sheet": "/Recettes_pages/...",
+    "recap-sheet": "",
     "ingredients-lists": [
       {
         "title": "Pour le caramel",
@@ -519,7 +519,7 @@
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
-    "recap-sheet": "/Recettes_pages/...",
+    "recap-sheet": "",
     "ingredients-lists": [
       {
         "title": "",

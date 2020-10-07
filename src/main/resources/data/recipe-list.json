@@ -1,8 +1,239 @@
 [
   {
+    "id": "pates_saucisses",
+    "title": "Les pâtes à la chair à saucisse",
+    "image": "/images/bouvier/pates_a_la_chair_saucisse/pelemelpate.JPG",
+    "image-mini": "/images/bouvier/pates_a_la_chair_saucisse/pelemelpate.JPG",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "/images/bouvier/pates_a_la_chair_saucisse/pateschairasaucisse.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "700g de chair à saucisse", "2 gros oignons jaunes", "Huile d'olive",
+          "Huile d'arachide", "500g de penne", "1 petite boite de concentré", "Du sel pour l'eau des pâtes", "Du poivre pour ceux qui aiment",
+          "1 c. à s. de Thym et 1 CaS de Romarin OU de la Nepita OU de la Marjolaine"
+        ]
+      }
+    ],
+    "quantite": "6 personnes",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "/images/bouvier/pates_a_la_chair_saucisse/emincerloignon.JPG",
+            "video": "",
+            "text": "Emincer finement les oignons."
+          },
+          {
+            "image": "/images/bouvier/pates_a_la_chair_saucisse/oignonrevenu.JPG",
+            "video": "",
+            "text": "Dans un mélange d’huiles, blondir sans faire dorer l’oignon dans l’huile froide."
+          },
+          {
+            "image": "/images/bouvier/pates_a_la_chair_saucisse/Revenirlaviande.JPG",
+            "video": "",
+            "text": "Ajouter la chair à saucisse émiettée, faire revenir."
+          },
+          {
+            "image": "/images/bouvier/pates_a_la_chair_saucisse/coulis.JPG",
+            "video": "",
+            "text": "Ajouter le coulis, faire revenir.\nAjouter les herbes"
+          },
+          {
+            "image": "/images/bouvier/pates_a_la_chair_saucisse/couvrirdeau.JPG",
+            "video": "",
+            "text": "Couvrir avec de l’eau. Laisser réduire 20 à 30 min."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Cuire les pâtes à part."
+          },
+          {
+            "image": "/images/bouvier/pates_a_la_chair_saucisse/patesfinales.JPG",
+            "video": "",
+            "text": "Mélanger le tout."
+          }
+        ]
+      }
+    ],
+    "chef_word": "La chef ajoute une demi cuillère à soupe de Paprika en même temps que les herbes.",
+    "videos": [
+    ]
+  },
+  {
+    "id": "tian_legumes",
+    "title": "Tian de légumes",
+    "image": "/images/bouvier/Tian_de_legumes/pelemeltian.JPG",
+    "image-mini": "/images/bouvier/Tian_de_legumes/pelemeltian.JPG",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "/images/bouvier/Tian_de_legumes/Tiandelégumes.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "3 courgettes", "3 aubergines", "2 poivrons",
+          "1 oignon", "3 tomates moyennes", "125g de parmesan",
+          "Ma petite sauce tomate"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "/images/bouvier/Tian_de_legumes/decoupe.JPG",
+            "video": "",
+            "text": "Couper les courgettes, les aubergines et les poivrons en fines tranches, les réserver dans une passoire en les saupoudrant de gros sel. Couper et conserver les tomates à part."
+          },
+          {
+            "image": "/images/bouvier/Tian_de_legumes/revenir.JPG",
+            "video": "",
+            "text": "Faire revenir les légumes de la passoire dans l’huile d’olive."
+          },
+          {
+            "image": "/images/bouvier/Tian_de_legumes/papierabsorbant.JPG",
+            "video": "",
+            "text": "Une fois cuits, les égoutter sur du papier absorbant.\nPréchauffer le four à 150°C."
+          },
+          {
+            "image": "/images/bouvier/Tian_de_legumes/dressage.JPG",
+            "video": "",
+            "text": "Dresser le Tian : dans un plat, commencer par déposer une couche de légumes puis une couche de tomate. Alterner les couches jusqu'à épuisement des ingrédients. Couvrir le tout de Ma petite sauce tomate et de parmesan.\nEnfourner pour 40 minutes."
+          }
+        ]
+      }
+    ],
+    "chef_word": "La chef ajoute une demi cuillère à soupe de Paprika en même temps que les herbes.",
+    "videos": [
+    ]
+  },
+  {
+    "id": "beignet_courgette",
+    "title": "Beignets de courgette",
+    "image": "/images/bouvier/Beignets_de_courgettes_biere/pelemelbeignet.JPG",
+    "image-mini": "/images/bouvier/Beignets_de_courgettes_biere/pelemelbeignet.JPG",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "/images/bouvier/Beignets_de_courgettes_biere/beignetsdecourgette.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "1 courgette", "125g de farine", "1 CaS d'huile d'arachide",
+          "20cl de bière", "20cl d'eau", "sel fin",
+          "1 oeuf"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "/images/bouvier/Beignets_de_courgettes_biere/courgettespapier.JPG",
+            "video": "",
+            "text": "Couper la courgette en tranche fine et les mettre sur un sopalin. Les saler et laisser dégorger."
+          },
+          {
+            "image": "/images/bouvier/Beignets_de_courgettes_biere/patebiere.PNG",
+            "video": "",
+            "text": "Pendant ce temps préparer la pâte à beignet : dans un saladier, verser la farine, le sel, le jaune de l’oeuf  (mettre le blanc de côté), mélanger et ajouter 10 à 20 cl d’eau. La pâte doit être fluide mais encore un peu épaisse ! Mélanger à l’aide de la cuillère magique. Rajouter la bière jusqu’à l’obtention d’une pâte fluide mais pas trop liquide. Verser une cuillère à soupe d’huile sur le dessus, couvrir d’un film et laisser reposer au frigo 30 min."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Au bout de 15 min, retourner les tranches de courgette, resaler et laisser de nouveau dégorger."
+          },
+          {
+            "image": "",
+            "video": "https://www.youtube.com/embed/i2Xl-Yuhyjw",
+            "text": "Lorsque la pâte est prête, monter le blanc en neige avec une pincé de sel. Bien mélanger la pâte puis y incorporer le blanc."
+          },
+          {
+            "image": "",
+            "video": "https://www.youtube.com/embed/iC3eatJe0Ww",
+            "text": "Tout de suite dans une poêle, faire chauffer l’huile. Une fois bien chaude, tremper une tranche dans la pâte à beignet puis la plonger dans l’huile. Recommencer l’opération. Au bout de deux minutes, retourner les beignets."
+          },
+          {
+            "image": "",
+            "video": "/images/bouvier/Beignets_de_courgettes_biere/beignetshuile.JPG",
+            "text": "Ils seront prêts dès lors que les deux faces sont biens dorées. Les déposer  sur un papier absorbant.\nA dévorer tout de suite."
+          }
+        ]
+      }
+    ],
+    "chef_word": "",
+    "videos": [
+    ]
+  },
+  {
+    "id": "pates_aubergines",
+    "title": "Pâtes aux aubergines",
+    "image": "/images/bouvier/patesaubergines/pelemelpates.JPG",
+    "image-mini": "/images/bouvier/patesaubergines/pelemelpates.JPG",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "/images/bouvier/patesaubergines/patesauxaubergines.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "1 aubergine bien ferme", "2 gousses d'ail pelées et émincées", "1 oignon pelé et finement haché",
+          "800gr de tomates en boîte", "1 cuillerée de vinaigre balsamique", "1 botte de basilic",
+          "4 c. à s. de crème fraîche", "450gr de penne ou rigatoni",
+          "200gr de mozzarella de vache", "sel", "poivre", "huile d'olive"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "/images/bouvier/patesaubergines/oignonsetaubergineseminces.JPG",
+            "video": "",
+            "text": "Emincer les oignons. Éliminer les extrémités de l’aubergine puis la couper dés de 1cm."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Faire chauffer une casserole avec 4 à 5 cuillères à soupe d'huile d'olive. Ajouter les dés d'aubergine puis remuer aussitôt pour les saisir sur tous les côtés. Laisser cuire à feu doux pendant 7 à 8 minutes avant d'incorporer l'ail et l'oignon."
+          },
+          {
+            "image": "/images/bouvier/patesaubergines/saucetomate.jpg",
+            "video": "",
+            "text": "Quand ils ont pris un peu de couleur, ajouter les tomates en boîte et le vinaigre balsamique. Mélanger bien puis assaisonner délicatement en sel et poivre. Ajouter les tiges de basilic, laisser mijoter la sauce pendant 15 minutes puis incorporer la crème fraîche."
+          },
+          {
+            "image": "/images/bouvier/patesaubergines/patesfinal.jpg",
+            "video": "",
+            "text": "Déchirer la mozzarella et répartir la moitié sur les pâtes. Déposer maintenant la sauce aux aubergines sur les pâtes. Rectifier l’assaisonnement, ajouter le basilic et le reste de mozzarella. Remuer pendant 30 secondes et servir  aussitôt.\nA déguster avec du parmesan râpé."
+          }
+        ]
+      }
+    ],
+    "chef_word": "",
+    "videos": [
+    ]
+  },
+  {
     "id": "boulettes",
     "title": "Les boulettes",
     "image": "/images/pizza-royale.jpeg",
+    "image-mini": "/images/pizza-royale.jpeg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -18,46 +249,51 @@
       }
     ],
     "quantite": "4 personnes",
-    "steps": [
+    "steps-lists": [
       {
-        "image": "",
-        "video": "/videos/test.mp4",
-        "text": "Commencer par faire une persillade en mélangeant le persil ciselé et l’ail finement haché. Réserver."
-      },
-      {
-        "image": "/images/pizza-royale.jpeg",
-        "video": "",
-        "text": "Découper le pain rassis en petits morceaux et les faire tremper dans le lait pour bien les ramollir."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Dans un saladier, mélanger le pain bien essoré avec la viande hachée, puis faites y un puit."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Dans ce dernier y verser l’oeuf et la persillade, mélangez les avec un doigt."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Une fois l’oeuf bien battu avec le persil et l’ail, saler et poivrer puis mélanger le tout."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Formez les boulettes en roulant une petite quantité de viande entre vos mains, les fariner."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Dans une poêle créer un bain d’huile. Une fois l’huile bien chaude (il faut pouvoir la voir ou l’entendre crépiter) faire frire les boulettes."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Une fois bien cuites les déposer sur du papier absorbant. "
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "/videos/test.mp4",
+            "text": "Commencer par faire une persillade en mélangeant le persil ciselé et l’ail finement haché. Réserver."
+          },
+          {
+            "image": "/images/pizza-royale.jpeg",
+            "video": "",
+            "text": "Découper le pain rassis en petits morceaux et les faire tremper dans le lait pour bien les ramollir."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Dans un saladier, mélanger le pain bien essoré avec la viande hachée, puis faites y un puit."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Dans ce dernier y verser l’oeuf et la persillade, mélangez les avec un doigt."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Une fois l’oeuf bien battu avec le persil et l’ail, saler et poivrer puis mélanger le tout."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Formez les boulettes en roulant une petite quantité de viande entre vos mains, les fariner."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Dans une poêle créer un bain d’huile. Une fois l’huile bien chaude (il faut pouvoir la voir ou l’entendre crépiter) faire frire les boulettes."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Une fois bien cuites les déposer sur du papier absorbant. "
+          }
+        ]
       }
     ],
     "chef_word": "Les boulettes de mamie sont à déguster avec une sauce tomate et du riz ou des pâtes ! <br/>Petit tips de la cuisinière : si votre huile devient trop chaude, baissez le feu et rajoutez de l’huile, ça refroidira le contenu de la poêle ! <br/><br/>Bon appetit !",
@@ -72,6 +308,7 @@
     "id": "gateaux-de-mamie",
     "title": "Les gâteaux de Mamie",
     "image": "/images/pizza-royale.jpeg",
+    "image-mini": "/images/pizza-royale.jpeg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -85,26 +322,31 @@
       }
     ],
     "quantite": "",
-    "steps": [
+    "steps-lists": [
       {
-        "image": "",
-        "video": "",
-        "text": "Préchauffer le four à 180°C"
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Bien battre les oeufs en omelette, y ajouter le beurre fondu au micro onde, puis le sucre, et enfin la farine et la levure. Il faut mettre autant de farine que le mélange en absorbe."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Constituer des petites boules de pâte à l’aide d’une cuillère à soupe et d’une cuillère à café, bien les espacer sur une plaque (utiliser la lèchefrite pour ne pas avoir la marque de la grille)."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Enfourner pour 15 à 20 minutes."
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Préchauffer le four à 180°C"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Bien battre les oeufs en omelette, y ajouter le beurre fondu au micro onde, puis le sucre, et enfin la farine et la levure. Il faut mettre autant de farine que le mélange en absorbe."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Constituer des petites boules de pâte à l’aide d’une cuillère à soupe et d’une cuillère à café, bien les espacer sur une plaque (utiliser la lèchefrite pour ne pas avoir la marque de la grille)."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Enfourner pour 15 à 20 minutes."
+          }
+        ]
       }
     ],
     "chef_word": "Pour les rendre plus gourmand, mamie les saupoudrait de morceaux de sucre. Aujourd’hui ils sont un peu plus compliqué à trouver, vous pouvez utiliser la méthode Monique-Aurélie qui consiste à casser de gros morceaux ou alors saupoudrez les de sucre fin. <br/>On note aussi que Mamie utilisait de la farine à gâteaux levante. Je pense que ça n’existe plus, mais si un jour ça revient sachez que c’était la recette originale, vous pourrez donc remplacer farine et levure par la farine levante. <br/><br/>Ces petits gâteaux se conservent très bien et régaleront les enfants et les grands comme quand nous étions plus jeunes.",
@@ -114,6 +356,7 @@
     "id": "gateau-au-yaourt",
     "title": "Le gâteau au yaourt",
     "image": "/images/pizza-royale.jpeg",
+    "image-mini": "/images/pizza-royale.jpeg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -128,36 +371,41 @@
       }
     ],
     "quantite": "",
-    "steps": [
+    "steps-lists": [
       {
-        "image": "",
-        "video": "",
-        "text": "Préchauffer le four à 180°C"
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Dans un saladier, commencer par bien mélanger le yaourt avec le sucre."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Y ajouter un pot de farine et un oeuf, mélanger énergiquement. Puis répéter l’opération deux fois. Dans le dernier pot de farine, au milieu incorporer la levure."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Ajouter l’huile."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Enfourner pour 25 minutes."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Faire fondre le chocolat et recouvrir le gâteaux."
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Préchauffer le four à 180°C"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Dans un saladier, commencer par bien mélanger le yaourt avec le sucre."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Y ajouter un pot de farine et un oeuf, mélanger énergiquement. Puis répéter l’opération deux fois. Dans le dernier pot de farine, au milieu incorporer la levure."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Ajouter l’huile."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Enfourner pour 25 minutes."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Faire fondre le chocolat et recouvrir le gâteaux."
+          }
+        ]
       }
     ],
     "chef_word": "On sait tous que pour vérifier si le gâteau est cuit, il faut planter un couteau au centre et si la lame ressort propre c’est que c’est bon ! <br/><br/>Mamie me disait que si ma pate faisait des petites bulles c’est qu’elle était bien. <br/><br/>Bien entendu, on peut y rajouter des petites touches perso. Marif vous dira qu’avec quelques gouttes d’extrait d’amande amer c’est excellent. Pour Juju, on rajoute un sachet de sucre vanillé (ou de la vanille sous n’importe quelle forme d’ailleurs). <br/><br/>Enfin si vous voulez faire le gâteau d'anniversaire de Fanny, il vous faut un glaçage à la crème fraîche et au sucre glace. Pour cela, munissez-vous d’une cuillère à café de crème fraîche épaisse et mélangez la avec du sucre glace. Il faut mettre assez de sucre glace pour que le mélange ne soit pas trop liquide. Le glaçage se fait sur un gâteau froid sinon il fond. Il vous faudra aussi des smarties, des chamallow et un moule en forme de clown.",
@@ -167,6 +415,7 @@
     "id": "flan-caramel",
     "title": "Flan au caramel",
     "image": "/images/pizza-royale.jpeg",
+    "image-mini": "/images/pizza-royale.jpeg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -187,71 +436,76 @@
       }
     ],
     "quantite": "",
-    "steps": [
+    "steps-lists": [
       {
-        "image": "",
-        "video": "",
-        "text": "Commencer par faire le caramel"
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Mouiller les morceaux de sucre, le mettre dans un casserole avec un peu d’eau au fond."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Mettre à feu vif : le sucre devient caramel liquide."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Faire passer le caramel sur les bord de la casserole pour bien récupérer le sucre qui s’y est déposé."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Verser rapidement le caramel dans le fond du moule à flan (ou le récipient qui ira au four) puis le faire monter sur les bords tant qu’il est liquide. Le geste doit être rapide car le caramel refroidit vite."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Passer au flan"
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Préchauffer le four à 200° C"
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Battre énergiquement et longuement les oeufs en omelette à l’aide d’une cuillère magique (à défaut avec un fouet)."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Faire infuser la gousse de vanille (après l’avoir ouverte en deux dans le sens de la longueur) en faisant chauffer le lait avec les 25 morceaux de sucres en remuant pour les faire fondre."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Oter la gousse de vanille et verser le lait sucré sur les oeufs tout en battant énergiquement."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Verser le mélange dans le moule caramélisé sans cesser de le battre dans le saladier."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Cuire au bain marie 40 minutes."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Laisser refroidir avant de déguster ! "
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Commencer par faire le caramel"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Mouiller les morceaux de sucre, le mettre dans un casserole avec un peu d’eau au fond."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Mettre à feu vif : le sucre devient caramel liquide."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Faire passer le caramel sur les bord de la casserole pour bien récupérer le sucre qui s’y est déposé."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Verser rapidement le caramel dans le fond du moule à flan (ou le récipient qui ira au four) puis le faire monter sur les bords tant qu’il est liquide. Le geste doit être rapide car le caramel refroidit vite."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Passer au flan"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Préchauffer le four à 200° C"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Battre énergiquement et longuement les oeufs en omelette à l’aide d’une cuillère magique (à défaut avec un fouet)."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Faire infuser la gousse de vanille (après l’avoir ouverte en deux dans le sens de la longueur) en faisant chauffer le lait avec les 25 morceaux de sucres en remuant pour les faire fondre."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Oter la gousse de vanille et verser le lait sucré sur les oeufs tout en battant énergiquement."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Verser le mélange dans le moule caramélisé sans cesser de le battre dans le saladier."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Cuire au bain marie 40 minutes."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Laisser refroidir avant de déguster ! "
+          }
+        ]
       }
     ],
     "chef_word": "",
@@ -261,6 +515,7 @@
     "id": "tarte-bourdaloue",
     "title": "Tarte Bourdaloue",
     "image": "/images/pizza-royale.jpeg",
+    "image-mini": "/images/pizza-royale.jpeg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -288,96 +543,101 @@
       }
     ],
     "quantite": "",
-    "steps": [
+    "steps-lists": [
       {
-        "image": "",
-        "video": "",
-        "text": "Commencer par préparer la crème pâtissière"
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Porter à ébullition sur un feu moyen 17cl de lait avec la vanille fendue dans le sens de la longueur dans une casserole préalablement humidifiée pour éviter que le lait accroche."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Blanchir le jaune avec le sucre à la fourchette."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Ajouter la farine et la maïzena tamisées puis le lait restant froid. Bien mélanger jusqu'à ce que l’appareil soit lisse."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Ajouter en remuant un tiers du lait, puis un second tiers."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "S’assurer que le lait n’ait pas accroché et remettre le tout sur un feu moyen vif."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Remuer énergiquement jusqu'à ce que le mélange prenne et durcisse (pendant environ 45 seconde selon le feu)."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Verser la crème dans un récipient en inox ou en pyrex pour accélérer le refroidissement. Il est possible de déposer la crème dans un récipient plongé dans de l’eau froide."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Préparer la crème d’amande"
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Ramollir le beurre et le réduire en pommade."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Ajouter le sucre, la poudre d’amande et l’oeuf."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Bien mélanger pour rendre la crème homogène. On peut y ajouter un demi bouchon de rhum ou de kirsch."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Mélanger les deux crèmes."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Déposer la pâte brisée dans un moule à tarte, piquer le fond."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Déposer une fine couche du mélange sur le fond (environ ⅓)."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Disposer les poires harmonieusement."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Les napper avec le reste du mélange."
-      },
-      {
-        "image": "",
-        "video": "",
-        "text": "Enfourner pour 40 minutes."
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Commencer par préparer la crème pâtissière"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Porter à ébullition sur un feu moyen 17cl de lait avec la vanille fendue dans le sens de la longueur dans une casserole préalablement humidifiée pour éviter que le lait accroche."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Blanchir le jaune avec le sucre à la fourchette."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Ajouter la farine et la maïzena tamisées puis le lait restant froid. Bien mélanger jusqu'à ce que l’appareil soit lisse."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Ajouter en remuant un tiers du lait, puis un second tiers."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "S’assurer que le lait n’ait pas accroché et remettre le tout sur un feu moyen vif."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Remuer énergiquement jusqu'à ce que le mélange prenne et durcisse (pendant environ 45 seconde selon le feu)."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Verser la crème dans un récipient en inox ou en pyrex pour accélérer le refroidissement. Il est possible de déposer la crème dans un récipient plongé dans de l’eau froide."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Préparer la crème d’amande"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Ramollir le beurre et le réduire en pommade."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Ajouter le sucre, la poudre d’amande et l’oeuf."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Bien mélanger pour rendre la crème homogène. On peut y ajouter un demi bouchon de rhum ou de kirsch."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Mélanger les deux crèmes."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Déposer la pâte brisée dans un moule à tarte, piquer le fond."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Déposer une fine couche du mélange sur le fond (environ ⅓)."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Disposer les poires harmonieusement."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Les napper avec le reste du mélange."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Enfourner pour 40 minutes."
+          }
+        ]
       }
     ],
     "chef_word": "Le chef recommande cette version de la tarte, mais la vraie recette conseille de rajouter des amandes effilées avant d’enfourner et rien ne précise qu’il est interdit d’ajouter des pépites de chocolats.<br/><br/>Les poires conférences sont très adaptées.",

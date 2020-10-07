@@ -14,6 +14,9 @@ public class Recipe {
 
     private String image;
 
+    @JsonProperty("image-mini")
+    private String imageMini;
+
     private RecipeCategory category;
 
     private RecipeFamily family;
@@ -28,7 +31,8 @@ public class Recipe {
 
     private String quantite;
 
-    private List<RecipeStep> steps;
+    @JsonProperty("steps-lists")
+    private List<StepList> stepListCollection;
 
     @JsonProperty("chef_word")
     private String chefWord;
@@ -107,12 +111,12 @@ public class Recipe {
         this.quantite = quantite;
     }
 
-    public List<RecipeStep> getSteps() {
-        return steps;
+    public List<StepList> getStepListCollection() {
+        return stepListCollection;
     }
 
-    public void setSteps(List<RecipeStep> steps) {
-        this.steps = steps;
+    public void setStepListCollection(List<StepList> stepListCollection) {
+        this.stepListCollection = stepListCollection;
     }
 
     public String getChefWord() {
@@ -129,5 +133,13 @@ public class Recipe {
 
     public void setVideos(List<Video> videos) {
         this.videos = videos;
+    }
+
+    public String getImageMini() {
+        return imageMini;
+    }
+
+    public void setImageMini(String imageMini) {
+        this.imageMini = imageMini;
     }
 }

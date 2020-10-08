@@ -2,7 +2,9 @@ package org.guilhem.domain;
 
 public enum RecipeFamily {
     BOUVIER ("Bouvier"),
-    ALCOVER ("Alcover")
+    ALCOVER ("Alcover"),
+    MAMIE ("Mamie"),
+    VANCAPP ("Vancapp")
     ;
 
     private String label;

@@ -635,5 +635,105 @@
     ],
     "chef_word": "Le chef fait cette version de la tarte, mais la vraie recette conseil de rajouter des amandes effilées avant d’enfourner et rien ne précise qu’il est interdit d’ajouter des pépites de chocolats.<br/>Notez que les poires conférences sont très adaptées.",
     "videos": []
+  },
+  {
+    "id": "ile-flottante",
+    "title": "Ile flottante de Dédé",
+    "image": "bouvier/Ile_flottante_daddy/pelemele.JPG",
+    "image-mini": "bouvier/Ile_flottante_daddy/pelemele.JPG",
+    "category": "DESSERT",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "bouvier/Ile_flottante_daddy/Ileflottantededd.pdf",
+    "ingredients-lists": [
+      {
+        "title": "Meringue",
+        "ingredients": [
+          "5 blancs d'oeufs", "150g de sucre"
+        ]
+      },
+      {
+        "title": "Crème anglaise",
+        "ingredients": [
+          "500ml de lait", "5 jaunes d'oeufs", "125g de sucre", "1/2 gousse de vanille"
+        ]
+      },
+      {
+        "title": "Caramel",
+        "ingredients": [
+          "10 à 12 morceaux de sucre"
+        ]
+      }
+    ],
+    "quantite": "6 personnes",
+    "steps-lists": [
+      {
+        "title": "Préparer la crème anglaise (assez tôt pour qu'elle soit bien froide)",
+        "steps": [
+          {
+            "image": "bouvier/Ile_flottante_daddy/laitvanille.jpg",
+            "video": "",
+            "text": "Porter le lait et la vanille à ébullition dans une casserole à fond épais au préalable humidifiée."
+          },
+          {
+            "image": "bouvier/Ile_flottante_daddy/cremefeu.jpg",
+            "video": "",
+            "text": "Travailler les jaunes et le sucre au fouet dans un saladier jusqu’à ce qu’ils blanchissent. <br/>Ajouter en remuant le premier tiers du lait bouillant, puis un deuxième. <br/>S’assurer que le lait n’a pas accroché puis remettre le mélange à chauffer à feu doux en remuant avec une spatule en bois."
+          },
+          {
+            "image": "bouvier/Ile_flottante_daddy/chinois.jpg",
+            "video": "",
+            "text": "Contrôler la cuisson : la crème doit napper la spatule. <br/>Dès que la cuisson est terminée la passer au chinois pour la refroidir et la débarrasser des impuretés qu’elle pourrait contenir."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Placer le récipient dans un bain marie d’eau froide. Remuer pour favoriser le refroidissement. Dès que possible mettre au réfrigérateur."
+          }
+        ]
+      },
+      {
+        "title": "Préparer la meringue",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Préchauffer le four à 165°C."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Monter les blanc en neige avec la moitié du sucre. Pour les rendre bien ferme, les serrer en ajoutant le reste du sucre. Continuer à battre encore quelques minutes."
+          },
+          {
+            "image": "bouvier/Ile_flottante_daddy/blancsmoules.jpg",
+            "video": "",
+            "text": "Enfourner pour 5 minutes les blancs moulés à l’aide d’une grande cuillère sur la lèchefrite."
+          },
+          {
+            "image": "bouvier/Ile_flottante_daddy/blancsdanscreme.jpg",
+            "video": "",
+            "text": "Les laisser refroidir puis les disposer sur la crème anglaise."
+          }
+        ]
+      },
+      {
+        "title": "Réaliser le caramel au dernier moment",
+        "steps": [
+          {
+            "image": "bouvier/Ile_flottante_daddy/caramel.jpg",
+            "video": "",
+            "text": "Mettre du sucre très humidifié sur un feu vif et surveiller qu’il ne brûle pas. Lorsqu’il est bien brun le sortir du feu."
+          },
+          {
+            "image": "bouvier/Ile_flottante_daddy/ileflo.jpg",
+            "video": "",
+            "text": "Napper les blancs d’oeufs."
+          }
+        ]
+      }
+    ],
+    "chef_word": "Ne pas blanchir longuement les jaunes, ils deviendraient mousseux et la cuisson serait plus difficile à controler. <br/>Il est important de bien remuer la crème quand on la fait cuire pour répartir la chaleur. La crème est plus onctueuse si la cuisson est douce et prolongée. En cas de surcuisson, on peut la rattraper en la fouettant et en la passant au chinois.",
+    "videos": []
   }
 ]

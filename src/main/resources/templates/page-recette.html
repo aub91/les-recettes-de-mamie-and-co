@@ -76,7 +76,7 @@
          th:onclick="openModal(this.getAttribute('data-popupid'))"
          th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
         <div class="w3-display-container w3-margin-top">
-            <img th:src="${recipe.imageMini}" alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${recipe.imageMini})}" alt="Norway" style="width:100%" class="w3-hover-opacity">
             <div class="w3-display-topright">
                 <span class="w3-tag w3-blue" th:text="${recipe.family.label}">Bouvier</span>
             </div>
@@ -95,7 +95,7 @@
       <div class="w3-modal-content">
         <div class="w3-container">
           <div class="w3-display-container w3-margin-top">
-            <img th:src="${recipe.image}" alt="" style="width:100%">
+            <img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${recipe.image})}" alt="" style="width:100%">
             <div class="w3-display-bottomright">
                 <span class="w3-tag w3-blue" th:text="${recipe.family.label}">Bouvier</span>
             </div>
@@ -130,7 +130,7 @@
                                 <span class="w3-badge w3-green" th:text="${iStat.count}"></span><span class="w3-margin-left" th:utext="${step.text}"/>
                             </div>
                             <div th:if="${step.image != ''}" class="w3-margin-bottom">
-                                <img th:src="${step.image}" alt="" style="width:100%">
+                                <img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${step.image})}" alt="" style="width:100%">
                             </div>
                             <div th:if="${step.video != ''}">
                                 <iframe width="100%" height="auto" th:src="${step.video}"

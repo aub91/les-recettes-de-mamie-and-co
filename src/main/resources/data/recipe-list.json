@@ -2,8 +2,8 @@
   {
     "id": "pates_saucisses",
     "title": "Les pâtes à la chair à saucisse",
-    "image": "bouvier/pates_a_la_chair_saucisse/pelemelpate.JPG",
-    "image-mini": "bouvier/pates_a_la_chair_saucisse/pelemelpate.JPG",
+    "image": "bouvier/pates_a_la_chair_saucisse/pelemelpate.jpg",
+    "image-mini": "bouvier/pates_a_la_chair_saucisse/pelemelpate.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -24,27 +24,27 @@
         "title": "",
         "steps": [
           {
-            "image": "bouvier/pates_a_la_chair_saucisse/emincerloignon.JPG",
+            "image": "bouvier/pates_a_la_chair_saucisse/emincerloignon.jpg",
             "video": "",
             "text": "Emincer finement les oignons."
           },
           {
-            "image": "bouvier/pates_a_la_chair_saucisse/oignonrevenu.JPG",
+            "image": "bouvier/pates_a_la_chair_saucisse/oignonrevenu.jpg",
             "video": "",
             "text": "Dans un mélange d’huiles, blondir sans faire dorer l’oignon dans l’huile froide."
           },
           {
-            "image": "bouvier/pates_a_la_chair_saucisse/Revenirlaviande.JPG",
+            "image": "bouvier/pates_a_la_chair_saucisse/Revenirlaviande.jpg",
             "video": "",
             "text": "Ajouter la chair à saucisse émiettée, faire revenir."
           },
           {
-            "image": "bouvier/pates_a_la_chair_saucisse/coulis.JPG",
+            "image": "bouvier/pates_a_la_chair_saucisse/coulis.jpg",
             "video": "",
             "text": "Ajouter le coulis, faire revenir.<br/>Ajouter les herbes"
           },
           {
-            "image": "bouvier/pates_a_la_chair_saucisse/couvrirdeau.JPG",
+            "image": "bouvier/pates_a_la_chair_saucisse/couvrirdeau.jpg",
             "video": "",
             "text": "Couvrir avec de l’eau. Laisser réduire 20 à 30 min."
           },
@@ -54,7 +54,7 @@
             "text": "Cuire les pâtes à part."
           },
           {
-            "image": "bouvier/pates_a_la_chair_saucisse/patesfinales.JPG",
+            "image": "bouvier/pates_a_la_chair_saucisse/patesfinales.jpg",
             "video": "",
             "text": "Mélanger le tout."
           }
@@ -68,8 +68,8 @@
   {
     "id": "tian_legumes",
     "title": "Tian de légumes",
-    "image": "bouvier/Tian_de_legumes/pelemeltian.JPG",
-    "image-mini": "bouvier/Tian_de_legumes/pelemeltian.JPG",
+    "image": "bouvier/Tian_de_legumes/pelemeltian.jpg",
+    "image-mini": "bouvier/Tian_de_legumes/pelemeltian.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -90,22 +90,22 @@
         "title": "",
         "steps": [
           {
-            "image": "bouvier/Tian_de_legumes/decoupe.JPG",
+            "image": "bouvier/Tian_de_legumes/decoupe.jpg",
             "video": "",
             "text": "Couper les courgettes, les aubergines et les poivrons en fines tranches, les réserver dans une passoire en les saupoudrant de gros sel. Couper et conserver les tomates à part."
           },
           {
-            "image": "bouvier/Tian_de_legumes/revenir.JPG",
+            "image": "bouvier/Tian_de_legumes/revenir.jpg",
             "video": "",
             "text": "Faire revenir les légumes de la passoire dans l’huile d’olive."
           },
           {
-            "image": "bouvier/Tian_de_legumes/papierabsorbant.JPG",
+            "image": "bouvier/Tian_de_legumes/papierabsorbant.jpg",
             "video": "",
             "text": "Une fois cuits, les égoutter sur du papier absorbant.<br/>Préchauffer le four à 150°C."
           },
           {
-            "image": "bouvier/Tian_de_legumes/dressage.JPG",
+            "image": "bouvier/Tian_de_legumes/dressage.jpg",
             "video": "",
             "text": "Dresser le Tian : dans un plat, commencer par déposer une couche de légumes puis une couche de tomate. Alterner les couches jusqu'à épuisement des ingrédients. Couvrir le tout de Ma petite sauce tomate et de parmesan.<br/>Enfourner pour 40 minutes."
           }
@@ -119,8 +119,8 @@
   {
     "id": "beignet_courgette",
     "title": "Beignets de courgette",
-    "image": "bouvier/Beignets_de_courgettes_biere/pelemelbeignet.JPG",
-    "image-mini": "bouvier/Beignets_de_courgettes_biere/pelemelbeignet.JPG",
+    "image": "bouvier/Beignets_de_courgettes_biere/pelemelbeignet.jpg",
+    "image-mini": "bouvier/Beignets_de_courgettes_biere/pelemelbeignet.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -141,7 +141,7 @@
         "title": "",
         "steps": [
           {
-            "image": "bouvier/Beignets_de_courgettes_biere/courgettespapier.JPG",
+            "image": "bouvier/Beignets_de_courgettes_biere/courgettespapier.jpg",
             "video": "",
             "text": "Couper la courgette en tranche fine et les mettre sur un sopalin. Les saler et laisser dégorger."
           },
@@ -166,7 +166,7 @@
             "text": "Tout de suite dans une poêle, faire chauffer l’huile. Une fois bien chaude, tremper une tranche dans la pâte à beignet puis la plonger dans l’huile. Recommencer l’opération. Au bout de deux minutes, retourner les beignets."
           },
           {
-            "image": "bouvier/Beignets_de_courgettes_biere/beignetshuile.JPG",
+            "image": "bouvier/Beignets_de_courgettes_biere/beignetshuile.jpg",
             "video": "",
             "text": "Ils seront prêts dès lors que les deux faces sont biens dorées. Les déposer  sur un papier absorbant.<br/>A dévorer tout de suite."
           }
@@ -180,8 +180,8 @@
   {
     "id": "pates_aubergines",
     "title": "Pâtes aux aubergines",
-    "image": "bouvier/patesaubergines/pelemelpates.JPG",
-    "image-mini": "bouvier/patesaubergines/pelemelpates.JPG",
+    "image": "bouvier/patesaubergines/pelemelpates.jpg",
+    "image-mini": "bouvier/patesaubergines/pelemelpates.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -203,7 +203,7 @@
         "title": "",
         "steps": [
           {
-            "image": "bouvier/patesaubergines/oignonsetaubergineseminces.JPG",
+            "image": "bouvier/patesaubergines/oignonsetaubergineseminces.jpg",
             "video": "",
             "text": "Emincer les oignons. Éliminer les extrémités de l’aubergine puis la couper dés de 1cm."
           },
@@ -232,8 +232,8 @@
   {
     "id": "curry_malais",
     "title": "Curry de poisson Malais",
-    "image": "bouvier/Poisson_malais/Pelemelemalais.JPG",
-    "image-mini": "bouvier/Poisson_malais/Pelemelemalais.JPG",
+    "image": "bouvier/Poisson_malais/Pelemelemalais.jpg",
+    "image-mini": "bouvier/Poisson_malais/Pelemelemalais.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -261,17 +261,17 @@
             "text": "Découper le poisson en gros morceaux, saler et reserver."
           },
           {
-            "image": "bouvier/Poisson_malais/Noixdecoco.JPG",
+            "image": "bouvier/Poisson_malais/Noixdecoco.jpg",
             "video": "",
             "text": "Faire sauter la noix de coco sans graisse dans un wok jusqu’à ce qu’elle soit dorée."
           },
           {
-            "image": "bouvier/Poisson_malais/noixdecocoetcitrone.JPG",
+            "image": "bouvier/Poisson_malais/noixdecocoetcitrone.jpg",
             "video": "",
             "text": "Mettre l’huile, le gingembre, le piment l’ail et la citronnelle à revenir. Arroser de sauce de poisson et remuer."
           },
           {
-            "image": "bouvier/Poisson_malais/Poissonmalaisfinal.JPG",
+            "image": "bouvier/Poisson_malais/Poissonmalaisfinal.jpg",
             "video": "",
             "text": "Ajouter le lait de coco, le bouillon de volaille, le curcuma, le sucre et le jus de citron. <br/>Laisser mijoter 10 min.<br/>Ajouter le poisson et laisser mijoter encore 6 à 8 minutes.<br/>Garnir de coriandre et rondelles de citron vert."
           }
@@ -285,8 +285,8 @@
   {
     "id": "boulettes",
     "title": "Les boulettes",
-    "image": "bouvier/Poisson_malais/Pelemelemalais.JPG",
-    "image-mini": "bouvier/Poisson_malais/Pelemelemalais.JPG",
+    "image": "bouvier/Poisson_malais/Pelemelemalais.jpg",
+    "image-mini": "bouvier/Poisson_malais/Pelemelemalais.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -360,8 +360,8 @@
   {
     "id": "gateaux-de-mamie",
     "title": "Les gâteaux de Mamie",
-    "image": "mamie/gateauxmamie/pelemelegateauxdemamie.JPG",
-    "image-mini": "mamie/gateauxmamie/pelemelegateauxdemamie.JPG",
+    "image": "mamie/gateauxmamie/pelemelegateauxdemamie.jpg",
+    "image-mini": "mamie/gateauxmamie/pelemelegateauxdemamie.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "MAMIE",
@@ -385,17 +385,17 @@
             "text": "Préchauffer le four à 180°C"
           },
           {
-            "image": "mamie/gateauxmamie/oeufbeurresucre.JPG",
+            "image": "mamie/gateauxmamie/oeufbeurresucre.jpg",
             "video": "",
             "text": "Bien battre les oeufs en omelette, y ajouter le beurre fondu au micro onde, puis le sucre."
           },
           {
-            "image": "mamie/gateauxmamie/consistance.JPG",
+            "image": "mamie/gateauxmamie/consistance.jpg",
             "video": "",
             "text": "Ajouter pour finir la farine et la levure. Il faut mettre autant de farine que le mélange en absorbe."
           },
           {
-            "image": "mamie/gateauxmamie/gateauxavantcuisson.JPG",
+            "image": "mamie/gateauxmamie/gateauxavantcuisson.jpg",
             "video": "https://www.youtube.com/embed/SLCdDWWba4E",
             "text": "Constituer des petites boules de pâte à l’aide d’une cuillère à soupe et d’une cuillère à café, bien les espacer sur une plaque (utiliser la lèchefrite pour ne pas avoir la marque de la grille). <br/><br/>Enfourner pour 15 à 20 minutes."
           }
@@ -408,8 +408,8 @@
   {
     "id": "gateau-au-yaourt",
     "title": "Le gâteau au yaourt",
-    "image": "bouvier/gateauyaourt/pelemelegateauyaourt.JPG",
-    "image-mini": "bouvier/gateauyaourt/pelemelegateauyaourt.JPG",
+    "image": "bouvier/gateauyaourt/pelemelegateauyaourt.jpg",
+    "image-mini": "bouvier/gateauyaourt/pelemelegateauyaourt.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -439,7 +439,7 @@
             "text": "Dans un saladier, commencer par bien mélanger le yaourt avec le sucre."
           },
           {
-            "image": "bouvier/gateauyaourt/farine.JPG",
+            "image": "bouvier/gateauyaourt/farine.jpg",
             "video": "",
             "text": "Y ajouter un pot de farine et un oeuf, mélanger énergiquement. Puis répéter l’opération deux fois. Dans le dernier pot de farine, au milieu incorporer la levure."
           },
@@ -454,17 +454,17 @@
             "text": "Verser la pâte dans un moule beurré et fariné"
           },
           {
-            "image": "bouvier/gateauyaourt/gateaunu.JPG",
+            "image": "bouvier/gateauyaourt/gateaunu.jpg",
             "video": "",
             "text": "Enfourner pour 25 minutes."
           },
           {
-            "image": "bouvier/gateauyaourt/bain.JPG",
+            "image": "bouvier/gateauyaourt/bain.jpg",
             "video": "",
             "text": "Faire fondre le chocolat au bain-marie."
           },
           {
-            "image": "bouvier/gateauyaourt/gateauchoco.JPG",
+            "image": "bouvier/gateauyaourt/gateauchoco.jpg",
             "video": "",
             "text": "Recouvrir le gâteaux."
           }
@@ -477,8 +477,8 @@
   {
     "id": "flan-caramel",
     "title": "Flan au caramel",
-    "image": "vancapp/Flan/pelemele.JPG",
-    "image-mini": "vancapp/Flan/pelemele.JPG",
+    "image": "vancapp/Flan/pelemele.jpg",
+    "image-mini": "vancapp/Flan/pelemele.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "VANCAPP",
@@ -504,22 +504,22 @@
         "title": "",
         "steps": [
           {
-            "image": "vancapp/Flan/caramel.JPG",
+            "image": "vancapp/Flan/caramel.jpg",
             "video": "https://www.youtube.com/embed/oaNv0fp-arI",
             "text": "Commencer par faire le caramel:<br/>Mouiller les morceau de sucre, le mettre dans un casserole avec un peu d’eau au fond. Mettre à feu vif : le sucre devient caramel liquide. Faire passer le caramel sur les bord de la casserole pour bien récupérer le sucre qui s’y est déposé. Verser rapidement le caramel dans le fond du moule à flan (ou le récipient qui ira au four) puis le faire monter sur les bords tant qu’il est liquide. Le geste doit être rapide car le caramel refroidit vite."
           },
           {
-            "image": "vancapp/Flan/flanpreparation.JPG",
+            "image": "vancapp/Flan/flanpreparation.jpg",
             "video": "",
             "text": "Pour le flan : <br/>Préchauffer le four à 200° C <br/>Battre énergiquement et longuement les oeufs en omelette à l’aide d’une cuillère magique (à défaut avec un fouet).<br/>Faire infuser la gousse de vanille (après l’avoir ouverte en deux dans le sens de la longueur) en faisant chauffer le lait avec les 25 morceaux de sucres en remuant pour les faire fondre.<br/>Oter la gousse de vanille et verser le lait sucré sur les oeufs tout en battant énergiquement."
           },
           {
-            "image": "vancapp/Flan/flanverse.JPG",
+            "image": "vancapp/Flan/flanverse.jpg",
             "video": "",
             "text": "Verser le mélange dans le moule caramélisé sans cesser de le battre dans le saladier."
           },
           {
-            "image": "vancapp/Flan/bainmarie.JPG",
+            "image": "vancapp/Flan/bainmarie.jpg",
             "video": "",
             "text": "Cuire au bain marie 40 minutes."
           }
@@ -532,8 +532,8 @@
   {
     "id": "tarte-bourdaloue",
     "title": "Tarte Bourdaloue",
-    "image": "bouvier/Bourdaloue/PelemeleBourda.JPG",
-    "image-mini": "bouvier/Bourdaloue/PelemeleBourda.JPG",
+    "image": "bouvier/Bourdaloue/PelemeleBourda.jpg",
+    "image-mini": "bouvier/Bourdaloue/PelemeleBourda.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -571,7 +571,7 @@
             "text": "Porter à ébullition sur un feu moyen 17cl de lait avec la vanille fendue dans le sens de la longueur dans une casserole préalablement humidifiée pour éviter que le lait accroche."
           },
           {
-            "image": "bouvier/Bourdaloue/blanchirlesoeufs.JPG",
+            "image": "bouvier/Bourdaloue/blanchirlesoeufs.jpg",
             "video": "",
             "text": "Blanchir le jaune avec le sucre à la fourchette. Ajouter la farine et la maïzena tamisées puis le lait restant froid. Bien mélanger jusqu'à ce que l’appareil soit lisse."
           },
@@ -581,7 +581,7 @@
             "text": "Ajouter en remuant un tiers du lait bouillant, remuer, puis ajouter un second tiers. <br/>S’assurer que le lait n’ait pas accroché et remettre le tout sur un feu moyen vif. Remuer énergiquement jusqu'à ce que le mélange prenne et durcisse (pendant environ 45 seconde selon le feu)."
           },
           {
-            "image": "bouvier/Bourdaloue/refroidissementcremepati.JPG",
+            "image": "bouvier/Bourdaloue/refroidissementcremepati.jpg",
             "video": "",
             "text": "Verser la crème dans un récipient en inox ou en pyrex pour accélérer le refroidissement. Il est possible de déposer la crème dans un récipient plongé dans de l’eau froide."
           }
@@ -596,12 +596,12 @@
             "text": "Ramollir le beurre et le réduire en pommade."
           },
           {
-            "image": "bouvier/Bourdaloue/deuxcremes.JPG",
+            "image": "bouvier/Bourdaloue/deuxcremes.jpg",
             "video": "",
             "text": "Ajouter le sucre, la poudre d’amande et l’oeuf. Bien mélanger pour rendre la crème homogène. On peut y ajouter un demi bouchon de rhum ou de kirsch."
           },
           {
-            "image": "bouvier/Bourdaloue/melange.JPG",
+            "image": "bouvier/Bourdaloue/melange.jpg",
             "video": "",
             "text": "Mélanger les deux crèmes."
           }
@@ -616,17 +616,17 @@
             "text": "Déposer la pâte brisée dans un moule à tarte, piquer le fond."
           },
           {
-            "image": "bouvier/Bourdaloue/fondtarte.JPG",
+            "image": "bouvier/Bourdaloue/fondtarte.jpg",
             "video": "",
             "text": "Déposer une fine couche du mélange sur le fond (environ ⅓)."
           },
           {
-            "image": "bouvier/Bourdaloue/Montagebourda.JPG",
+            "image": "bouvier/Bourdaloue/Montagebourda.jpg",
             "video": "",
             "text": "Disposer les poires harmonieusement les poires coupées en quarts ou en huitièmes."
           },
           {
-            "image": "bouvier/Bourdaloue/nappe.JPG",
+            "image": "bouvier/Bourdaloue/nappe.jpg",
             "video": "",
             "text": "Les napper avec le reste du mélange.<br/>Enfourner pour 40 minutes."
           }

@@ -735,5 +735,146 @@
     ],
     "chef_word": "Ne pas blanchir longuement les jaunes, ils deviendraient mousseux et la cuisson serait plus difficile à controler. <br/>Il est important de bien remuer la crème quand on la fait cuire pour répartir la chaleur. La crème est plus onctueuse si la cuisson est douce et prolongée. En cas de surcuisson, on peut la rattraper en la fouettant et en la passant au chinois.",
     "videos": []
+  },
+  {
+    "id": "mousse-chocolat",
+    "title": "Mousse au chocolat",
+    "image": "bouvier/Mousse_au_chocolat/pelemelemousse.JPG",
+    "image-mini": "bouvier/Mousse_au_chocolat/pelemelemousse.JPG",
+    "category": "DESSERT",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "bouvier/Mousse_au_chocolat/Moussechocolat.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "9 oeufs", "300g de chocolat dessert", "150g de sucre", "1 bouchon de rhum",
+          "3 c. à s. de café", "1 pincée de sel"
+        ]
+      }
+    ],
+    "quantite": "9 personnes",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "bouvier/Mousse_au_chocolat/chocoeau.JPG",
+            "video": "",
+            "text": "Faire fondre le chocolat au micro onde (mode décongélation) en le mélangeant à 3 cuillères à soupe de café et un peu d’eau."
+          },
+          {
+            "image": "bouvier/Mousse_au_chocolat/jaunechoco.JPG",
+            "video": "",
+            "text": "Blanchir les jaunes avec le sucre (réserver les blanc dans un grand saladier)."
+          },
+          {
+            "image": "bouvier/Mousse_au_chocolat/chocoblanc.JPG",
+            "video": "",
+            "text": "Ajouter le rhum puis mélanger avec le chocolat fondu."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Battre les blancs en neige, à la fin les raffermir avec le sel."
+          },
+          {
+            "image": "bouvier/Mousse_au_chocolat/melange.JPG",
+            "video": "",
+            "text": "Intégrer les blancs délicatement dans le mélange."
+          },
+          {
+            "image": "bouvier/Mousse_au_chocolat/fin.JPG",
+            "video": "",
+            "text": "Laisser poser 3h minimum au frigo avant de déguster."
+          }
+        ]
+      }
+    ],
+    "chef_word": "",
+    "videos": []
+  },
+  {
+    "id": "tarte-fruits-rouges",
+    "title": "Tarte aux fruits rouges et chantilly au mascarpone",
+    "image": "bouvier/Tartefruitsrouges/pelemele.jpg",
+    "image-mini": "bouvier/Tartefruitsrouges/pelemele.jpg",
+    "category": "DESSERT",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "bouvier/Tartefruitsrouges/Tartefruitsrouges.pdf",
+    "ingredients-lists": [
+      {
+        "title": "Sablé breton",
+        "ingredients": [
+          "3 jaunes d'oeufs", "130g de sucre brun", "150g de beurre mou (mais pas fondu)", "200g de farine",
+          "1 sachet de levure chimique", "2 pincées de sel"
+        ]
+      },
+      {
+        "title": "Chantilly au mascarpone",
+        "ingredients": [
+          "250g de crème fraîche liquide", "100g de mascarpone",
+          "30g de sucre glace", "Une ou deux pincées de vanille en poudre"
+        ]
+      },
+      {
+        "title": "Garniture",
+        "ingredients": [
+          "250g de fruits rouges (fraises, framboises et myrtilles"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "Préparer la pâte pour le sablé",
+        "steps": [
+          {
+            "image": "bouvier/Tartefruitsrouges/beurremou.jpg",
+            "video": "",
+            "text": "Séparer les blancs des jaunes (les blancs peuvent servir pour faire une meringue). Battre (au batteur si possible) les jaunes et le sucre jusqu'à ce que le mélange blanchisse. <br/>Ajouter le beurre mou et mélanger énergiquement à l’aide d’une spatule jusqu'à obtenir un mélange lisse et onctueux."
+          },
+          {
+            "image": "bouvier/Tartefruitsrouges/pate.jpg",
+            "video": "",
+            "text": "Incorporer la farine, le sel et la levure préalablement mélangés. La pâte est molle et collante. L'envelopper dans du papier sulfurisé, l'aplatir un peu et la placer au frigo pendant 2 heures."
+          },
+          {
+            "image": "bouvier/Tartefruitsrouges/etalerpate.jpg",
+            "video": "",
+            "text": "Préchauffer le four à 180°.<br/>Etaler la pâte entre deux feuilles de papier sulfurisé. À l’aide d’un cercle à pâtisserie (22 cm), découper un cercle de pâte mais sans soulever le cercle. Le laisser en place, nettoyer la pâte autour et enfourner pour 20 min. Le sablé doit être doré mais il reste mou. Il durciera en refroidissant. Laisser le sablé refroidir complètement avant d'ôter le cercle."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Une fois le sablé bien refroidi, découper les fruits rouges d’une jolie manière puis préparer la chantilly."
+          }
+        ]
+      },
+      {
+        "title": "Préparer la chantilly",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Dans un bol bien frais, placer la crème et le mascarpone très frais aussi (les placer au congélateur 5 min avant de se lancer). Battre au fouet électrique. Ne pas perdre patience ça peut prendre un peu de temps."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Quand la crème commence à prendre, ajouter le sucre glace et la vanille. Continuer à battre  jusqu’à obtenir une texture assez épaisse et compacte (pas du beurre non plus !)"
+          },
+          {
+            "image": "bouvier/Tartefruitsrouges/fraisesurchanti.jpg",
+            "video": "",
+            "text": "Répartir grossièrement la chantilly sur le sablé et recouvrir des fruits."
+          }
+        ]
+      }
+    ],
+    "chef_word": "La chef conseille de découper les fraises en 4, ce sera plus simple à découper et manger.<br/>Bon app.",
+    "videos": []
   }
 ]

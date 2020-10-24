@@ -3,7 +3,7 @@
     "id": "pates_saucisses",
     "title": "Les pâtes à la chair à saucisse",
     "image": "bouvier/pates_a_la_chair_saucisse/pelemelpate.jpg",
-    "image-mini": "bouvier/pates_a_la_chair_saucisse/patesfinales.jpg",
+    "image-mini": "bouvier/pates_a_la_chair_saucisse/patesfinalesmini.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -69,7 +69,7 @@
     "id": "tian_legumes",
     "title": "Tian de légumes",
     "image": "bouvier/Tian_de_legumes/pelemeltian.jpg",
-    "image-mini": "bouvier/Tian_de_legumes/imageMini.jpg",
+    "image-mini": "bouvier/Tian_de_legumes/tianmini.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -120,7 +120,7 @@
     "id": "beignet_courgette",
     "title": "Beignets de courgette",
     "image": "bouvier/Beignets_de_courgettes_biere/pelemelbeignet.jpg",
-    "image-mini": "bouvier/Beignets_de_courgettes_biere/beignetshuile.jpg",
+    "image-mini": "bouvier/Beignets_de_courgettes_biere/beignetmini.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -181,7 +181,7 @@
     "id": "pates_aubergines",
     "title": "Pâtes aux aubergines",
     "image": "bouvier/patesaubergines/pelemelpates.jpg",
-    "image-mini": "bouvier/patesaubergines/patesfinal.jpg",
+    "image-mini": "bouvier/patesaubergines/patesauberginesmini.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -233,7 +233,7 @@
     "id": "curry_malais",
     "title": "Curry de poisson Malais",
     "image": "bouvier/Poisson_malais/Pelemelemalais.jpg",
-    "image-mini": "bouvier/Poisson_malais/Poissonmalaisfinal.jpg",
+    "image-mini": "bouvier/Poisson_malais/poissonmalaismini.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -279,6 +279,234 @@
       }
     ],
     "chef_word": "La cheffe vous conseille vivement le dos de lieu jaune !",
+    "videos": [
+    ]
+  },
+  {
+    "id": "migliacciu",
+    "title": "Migliacciu de Tonton FEMC",
+    "image": "vancapp/Migliacciu/pelemelemigli.jpg",
+    "image-mini": "vancapp/Migliacciu/migliacciumini.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "VANCAPP",
+    "recap-sheet": "vancapp/Migliacciu/fichemigliacciu.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "1kg de farine à pizza", "2 sachets de levure de boulanger",
+          "2 c. à s. de sel",
+          "Poivre", "4 oeufs", "300ml d'eau",
+          "1 fromage frais de chèvre corse au lait cru (environ 700g)"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "vancapp/Migliacciu/pate.jpg",
+            "video": "",
+            "text": "Mélanger la farine, le sel, le poivre, 2 oeufs, l'eau et la levure pour former une pâte de consistance proche de celle de la pâte à pain.<br/>Laisser poser 1 à 2 heures pour faire lever la pâte."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "L'étaler sur un papier cuisson directement sur la lèchefrite. Pour cela, former un boudin dans la longueur et l'étaler à l'aide d'un rouleau.<br/>Préchauffer le four au maximum (250°C)."
+          },
+          {
+            "image": "vancapp/Migliacciu/fromage.jpg",
+            "video": "",
+            "text": "Couper le fromage en morceaux d'environ 2cm x 2cm et le répartir sur la pâte puis les enfoncer avec le dos de la cuillère."
+          },
+          {
+            "image": "vancapp/Migliacciu/migliacciu.jpg",
+            "video": "",
+            "text": "Battre les 2 oeufs entiers restants. Badigeonner la préparation à l'aide d'un pinceau.<br/>Enfourner pour 10 à 15 minutes."
+          }
+        ]
+      }
+    ],
+    "chef_word": "Ne pas manger le fromage de chèvre cru ! Il y a un risque de brucellose ou fièvre de malte qui entraîne des sueurs profuses la nuit et une grosse fatigue.",
+    "videos": [
+      {
+        "title": "",
+        "src": "https://www.youtube.com/embed/tiTSxInD_yk"
+      }
+    ]
+  },
+  {
+    "id": "tarte_oignon",
+    "title": "Tarte à l'oignon",
+    "image": "vancapp/Tarteoignon/pelemeleoignons.jpg",
+    "image-mini": "vancapp/Tarteoignon/tartemini.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "VANCAPP",
+    "recap-sheet": "vancapp/Tarteoignon/tarteoignon.pdf",
+    "ingredients-lists": [
+      {
+        "title": "Pâte brisée",
+        "ingredients": [
+          "100g de beurre doux", "250g de farine",
+          "60ml d'eau",
+          "1 pincée de sel"
+        ]
+      },
+      {
+        "title": "",
+        "ingredients": [
+          "1kg d'oignons jaunes et rouges", "Huile d'arachide",
+          "50g de beurre doux",
+          "1 c. à s. rase de farine", "1 petite boite de lait gloria entier (20cl)",
+          "100g de gruyère râpé", "Sel et poivre"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Préparer la pâte:<br/>Mettre la farine et la pincée de sel en tas sur le plan de travail. Faire un puits, y verser les 100g de beurre fondu au micro-onde, ajouter l'eau et pétrir rapidement pour faire une boule.<br/>Laisser la pâte reposer."
+          },
+          {
+            "image": "vancapp/Tarteoignon/oignonsrevenus.jpg",
+            "video": "",
+            "text": "Peler et émincer finement les oignons. Les faire revenir dans un faitout avec un fond d'huile et 25g de beurre. Laisser fondre une dizaine de minutes en surveillant qu'ils n'accrochent pas. A la fin, couvrir pendant 4 à 5 minutes.<br/>Saler, bien poivrer, gôuter pour ajuster."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Ecarter la préparation sur les bords du faitout pour faire fondre au centre le reste de beurre, y ajouter la farine en remuant bien (comme une béchamel).<br/>Ajouter toujours en remuant et à feu doux la boîte de lait.<br/>Retirer du feu et ajouter le gruyère râpé."
+          },
+          {
+            "image": "vancapp/Tarteoignon/pate.jpg",
+            "video": "",
+            "text": "Etaler la pâte dans un moule à tarte et verser la préparation dessus."
+          },
+          {
+            "image": "vancapp/Tarteoignon/tarte.jpg",
+            "video": "",
+            "text": "Enfourner dans le four préchauffé à 180°C pour 30 minutes."
+          }
+        ]
+      }
+    ],
+    "chef_word": "Pour ceux qui ont la chance d'avoir un kitchenaid, la pâte se fera en quatrième vitesse sur 3.<br/>Pour éviter de pleurer pendant la découpe des oignons, les passer sous l'eau.<br/>Notez qu'on peut remplacer la béchamel par de la crème fraîche.<br/>Nous pouvons tous remercier Madeleine pour cette recette.",
+    "videos": [
+    ]
+  },
+  {
+    "id": "ragout_macaroni",
+    "title": "Ragout de macaroni",
+    "image": "mamie/Ragoutdemacaroni/pelemeleragout.jpg",
+    "image-mini": "mamie/Ragoutdemacaroni/ragoutmini.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "MAMIE",
+    "recap-sheet": "mamie/Ragoutdemacaroni/Ragoutdemacaroni.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "300g de macaroni", "350g de sauté de veau",
+          "Huile d'arachide",
+          "1 bel oignon", "1 petite boite de concentré de tomate",
+          "1 feuille de laurier", "Sel et poivre"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Parer la viande, si besoin."
+          },
+          {
+            "image": "mamie/Ragoutdemacaroni/oignonviande.jpg",
+            "video": "",
+            "text": "Couper l'oignon en 4.<br/>Faire revenir à feu vif l'oignon et la viande. Bien laisser dorer et donner tout son jus. Il faut saler avant de finir de faire revenir."
+          },
+          {
+            "image": "mamie/Ragoutdemacaroni/toutrevenu.jpg",
+            "video": "",
+            "text": "Ajouter le coulis (la moitié ou le tiers de la boîte selon le jus rendu par la viande). Le faire revenir et bien brunir."
+          },
+          {
+            "image": "mamie/Ragoutdemacaroni/couvrirdeauetmacaroni.jpg",
+            "video": "",
+            "text": "Couvrir d'eau, saler de nouveau et poivrer. Ajouter la feuille de laurier.<br/>Laisser bouillir pour ajouter les macaronis. Baisser le feu et laisser cuire selon la qualité des macaronis."
+          }
+        ]
+      }
+    ],
+    "chef_word": "",
+    "videos": [
+    ]
+  },
+  {
+    "id": "oeufs_oignons",
+    "title": "Oeufs aux oignons",
+    "image": "vancapp/oeufsauxoignons/pelemeloeufsauxoignons.jpg",
+    "image-mini": "vancapp/oeufsauxoignons/oeufsauxoignonsmini.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "VANCAPP",
+    "recap-sheet": "vancapp/oeufsauxoignons/Oeufsauxpetitsoignons.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "1 oeuf et demi par personne", "100g d'oignons par oeuf",
+          "1 c. à c. de coulis pour 150g d'oignons (à vos calculettes)"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Faire cuire les oeufs 10 minutes (pour qu'ils soient durs)"
+          },
+          {
+            "image": "vancapp/oeufsauxoignons/oignonsrevenus.jpg",
+            "video": "",
+            "text": "Faire revenir les oignons émincés dans un peu d'huile (environ 7 minutes). Veiller à ce qu'ils n'accrochent pas."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Quand ils sont dorés, faire revenir le coulis jusqu'à ce qu'il brunisse."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Ajouter un verre d'eau, bien remuer.<br/>Saler et poivrer."
+          },
+          {
+            "image": "vancapp/oeufsauxoignons/oeufsauxoignonsfinal.jpg",
+            "video": "",
+            "text": "Après réduction, ajouter les oeufs durs.<br/>Servir bien chaud."
+          }
+        ]
+      }
+    ],
+    "chef_word": "La cheffe vous conseille les oignons frais quand la saison le permet, mais notez qu'ils cuisent plus vite. Pour les gros appétits, les oeufs aux oignons se marient très bien avec du riz blanc.",
     "videos": [
     ]
   },

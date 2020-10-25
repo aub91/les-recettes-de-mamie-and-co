@@ -511,6 +511,174 @@
     ]
   },
   {
+    "id": "croquettes_gruyere",
+    "title": "Croquettes au gruyère de mamie",
+    "image": "mamie/croquettes/pelemelecroquettes.jpg",
+    "image-mini": "mamie/croquettes/friremini.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "MAMIE",
+    "recap-sheet": "mamie/croquettes/croquettesgruyere.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "80g de beurre", "90g de farine",
+          "40cl de lait", "150g de gruyère râpé", "2 jaunes d'oeufs"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "mamie/croquettes/bechamel.jpg",
+            "video": "",
+            "text": "Faire une béchamel bien épaisse. Hors du feu, y incorporer le gruyère et les jaunes."
+          },
+          {
+            "image": "mamie/croquettes/Boudin.jpg",
+            "video": "",
+            "text": "Former 2 boudins sur du papier cuisson légèrement fariné puis les mettre au congélateur pour 15 à 20 minutes. Quand ils sont bien fermes, façonner des petites boulettes après avoir coupé les boudins en morceaux égaux."
+          },
+          {
+            "image": "mamie/croquettes/faconner.jpg",
+            "video": "",
+            "text": "Façonner des boulettes, les rouler dans la farine ou dans de la chapelure."
+          },
+          {
+            "image": "mamie/croquettes/frire.jpg",
+            "video": "",
+            "text": "Faire frire dans une huile bien chaude."
+          }
+        ]
+      }
+    ],
+    "chef_word": "Ne réaliser l'étape 2 que si les boulettes sont trop molles.",
+    "videos": [
+    ]
+  },
+  {
+    "id": "aubergines_parmigiana",
+    "title": "Aubergines à la parmigiana",
+    "image": "bouvier/Auberginesparmigiana/pelemeleaubergine.jpg",
+    "image-mini": "bouvier/Auberginesparmigiana/finmini.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "bouvier/Auberginesparmigiana/auberginesparmigiana.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "3 belles aubergines", "125g de parmesan",
+          "sauce tomate"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "bouvier/Auberginesparmigiana/degorge.jpg",
+            "video": "",
+            "text": "Couper les aubergines en tranches de 1cm, au fur et à mesure les mettre sur du sopalin et saupoudrer de sel pour qu'elles dégorgents."
+          },
+          {
+            "image": "bouvier/Auberginesparmigiana/four.jpg",
+            "video": "",
+            "text": "Préchauffer le four à 210°C, disposer les aubergines sur la lèchefrite, les badigeonner d'huile et les passer au four chaud 10 minutes de chaque côté."
+          },
+          {
+            "image": "bouvier/Auberginesparmigiana/montage.jpg",
+            "video": "",
+            "text": "Mettre dans un plat une couche d'aubergines, une couche de sauce tomate recouverte de parmesan puis une nouvelle couche d'aubergines."
+          },
+          {
+            "image": "bouvier/Auberginesparmigiana/fin.jpg",
+            "video": "",
+            "text": "Couvrir avec \"ma petite sauce tomate\" et le parmesan.<br/>Mettre au four 40 minutes à 150°C."
+          }
+        ]
+      }
+    ],
+    "chef_word": "",
+    "videos": [
+      {
+        "title": "",
+        "src": "https://www.youtube.com/embed/9CTBUOZ76jg"
+      }
+    ]
+  },
+  {
+    "id": "pates_fromages",
+    "title": "Pâtes aux quatre fromages",
+    "image": "bouvier/Patesfromages/pelemele.jpg",
+    "image-mini": "bouvier/Patesfromages/finalmini.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "bouvier/Patesfromages/patesfromages.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "500g de penne", "1 gousse d'ail", "50g de parmesan",
+          "50g de comté", "50g de mozzarella", "50g de roquefort", "25g de beurre"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "",
+            "video": "",
+            "text": "Faire cuire les pâtes comme indiqué"
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Pendant ce temps, hacher finement l'ail."
+          },
+          {
+            "image": "bouvier/Patesfromages/ailbeurre.jpg",
+            "video": "",
+            "text": "Dans une poêle, faire fondre le beurre avec l'ail."
+          },
+          {
+            "image": "bouvier/Patesfromages/fondre.jpg",
+            "video": "",
+            "text": "Une fois le beurre fondu, ajouter les fromages."
+          },
+          {
+            "image": "bouvier/Patesfromages/creme.jpg",
+            "video": "",
+            "text": "Quand ils sont bien fondus, ajouter la crème.<br/>Il est normal que des grumeaux apparaissent. Laisser sur le feu jusqu'à ce que le mélange devienne onctueux."
+          },
+          {
+            "image": "bouvier/Patesfromages/final.jpg",
+            "video": "",
+            "text": "Ajouter les pâtes à la poême.<br/>Servir bien chaud."
+          }
+        ]
+      }
+    ],
+    "chef_word": "La mozzarella permet l'onctuosité et le fromage à pâte persillée donne du caractère aux pâtes.<br/>N'hésitez pas à faire des tests en optant pour d'autres fromages tout en respectant les proportions.",
+    "videos": [
+      {
+        "title": "",
+        "src": "https://www.youtube.com/embed/9CTBUOZ76jg"
+      }
+    ]
+  },
+  {
     "id": "boulettes",
     "title": "Les boulettes",
     "image": "bouvier/Poisson_malais/Pelemelemalais.jpg",
@@ -589,7 +757,7 @@
     "id": "gateaux-de-mamie",
     "title": "Les gâteaux de Mamie",
     "image": "mamie/gateauxmamie/pelemelegateauxdemamie.jpg",
-    "image-mini": "mamie/gateauxmamie/gateauxfin.jpg",
+    "image-mini": "mamie/gateauxmamie/gateauxfinmini.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "MAMIE",
@@ -637,7 +805,7 @@
     "id": "gateau-au-yaourt",
     "title": "Le gâteau au yaourt",
     "image": "bouvier/gateauyaourt/pelemelegateauyaourt.jpg",
-    "image-mini": "bouvier/gateauyaourt/gateauchoco.jpg",
+    "image-mini": "bouvier/gateauyaourt/gateauchocomini.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -761,7 +929,7 @@
     "id": "tarte-bourdaloue",
     "title": "Tarte Bourdaloue",
     "image": "bouvier/Bourdaloue/PelemeleBourda.jpg",
-    "image-mini": "bouvier/Bourdaloue/Tartefiniebourdaloue.jpg",
+    "image-mini": "bouvier/Bourdaloue/Tartefiniebourdalouemini.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -868,7 +1036,7 @@
     "id": "ile-flottante",
     "title": "Ile flottante de Dédé",
     "image": "bouvier/Ile_flottante_daddy/pelemele.jpg",
-    "image-mini": "bouvier/Ile_flottante_daddy/ileflo.jpg",
+    "image-mini": "bouvier/Ile_flottante_daddy/ileflomini.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -968,7 +1136,7 @@
     "id": "mousse-chocolat",
     "title": "Mousse au chocolat",
     "image": "bouvier/Mousse_au_chocolat/pelemelemousse.JPG",
-    "image-mini": "bouvier/Mousse_au_chocolat/fin.JPG",
+    "image-mini": "bouvier/Mousse_au_chocolat/moussemini.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",
@@ -1027,7 +1195,7 @@
     "id": "tarte-fruits-rouges",
     "title": "Tarte aux fruits rouges et chantilly au mascarpone",
     "image": "bouvier/Tartefruitsrouges/pelemele.jpg",
-    "image-mini": "bouvier/Tartefruitsrouges/miniTarte.jpg",
+    "image-mini": "bouvier/Tartefruitsrouges/tartemini.jpg",
     "category": "DESSERT",
     "tags":[],
     "family": "BOUVIER",

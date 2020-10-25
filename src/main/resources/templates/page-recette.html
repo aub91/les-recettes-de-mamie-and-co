@@ -73,7 +73,6 @@
     <!-- Beginning of recipe-->  
     <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card"
          th:data-popupid="${recipe.id}"
-         th:onclick="openModal(this.getAttribute('data-popupid'))"
          th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
         <div class="w3-display-container w3-margin-top">
             <img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${recipe.imageMini})}" alt="Norway" style="width:100%" class="w3-hover-opacity">
@@ -91,77 +90,8 @@
     </div>
 
     <!-- Beginning of modal -->
-    <div th:id="${recipe.id}" class="w3-modal">
-      <div class="w3-modal-content">
-        <div class="w3-container">
-          <div class="w3-display-container w3-margin-top">
-            <img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${recipe.image})}" alt="" style="width:100%">
-            <div class="w3-display-bottomright">
-                <span class="w3-tag w3-blue" th:text="${recipe.family.label}">Bouvier</span>
-            </div>
-            <div class="w3-display-bottomleft">
-                <span class="w3-tag w3-red" th:text="${recipe.category.label}">Plat principal</span>
-            </div>
-          </div>
-          <div class="w3-container w3-white">
-            <h2><b th:text="${recipe.title}">Lorem Ipsum</b></h2>
-            <a th:if="${recipe.recapSheet} != ''" th:href="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${recipe.recapSheet})}" target="_blank">Fiche pdf</a>
-            <h5 th:if="${recipe.quantite} != ''"><u>Quantité:</u><span th:text="' ' + ${recipe.quantite}"></span></h5>
-            <hr/>
-            <div id="ingredients-lists">
-                <h3><u>Liste des ingrédients:</u></h3>
-                <div th:each="ingredientList : ${recipe.ingredientListCollection}">
-                    <div>
-                        <h5 th:if="${ingredientList.title} != ''" th:text="${ingredientList.title + ':'}"></h5>
-                        <ul class="w3-ul">
-                            <li th:text="${ingredient}" th:each="ingredient : ${ingredientList.ingredients}"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr/>
-            <h3><u>Etapes:</u></h3>
-            <div th:each="stepList : ${recipe.stepListCollection}">
-                <div>
-                    <h5 th:if="${stepList.title} != ''" th:text="${stepList.title + ':'}"></h5>
-                    <ul class="w3-ul">
-                        <li th:each="step, iStat : ${stepList.steps}">
-                            <div class="w3-margin-bottom">
-                                <span class="w3-badge w3-green" th:text="${iStat.count}"></span><span class="w3-margin-left" th:utext="${step.text}"/>
-                            </div>
-                            <div th:if="${step.image != ''}" class="w3-margin-bottom">
-                                <img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${step.image})}" alt="" style="width:100%">
-                            </div>
-                            <div th:if="${step.video != ''}">
-                                <iframe width="100%" height="auto" th:src="${step.video}"
-                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div th:id="recipe-modal" class="w3-modal">
 
-            <div id="chef-word-panel" class="w3-panel w3-border w3-round-xxlarge w3-serif w3-border-orange" th:if="${recipe.chefWord} != ''">
-                <p><i th:utext="'&quot;' + ${recipe.chefWord} + '&quot;'">"Make it as simple as possible, but not simpler."</i></p>
-            </div>
-            <div th:if="${recipe.videos.size() != 0}">
-                <h3><u>Vidéos:</u></h3>
-                <div th:each="video, iStat : ${recipe.videos}" class="w3-center">
-                    <iframe width="100%" height="auto"
-                            th:src="${video.src}">
-                    </iframe>
-                    <p th:text="${video.title}"></p>
-                </div>
-            </div>
-
-          </div>
-          <span th:data-popupid="${recipe.id}"
-                th:onclick="document.getElementById(this.getAttribute('data-popupid')).style.display='none'"
-                class="w3-button w3-red w3-display-topright">&times;</span>
-        </div>
-      </div>
     </div>
     <!-- End of recipe-->
     </div>
@@ -178,102 +108,214 @@
 </footer>
 </div>
 </body>
+
+<template id="modal-content">
+    <div class="w3-modal-content">
+        <div class="w3-container">
+            <div class="w3-display-container w3-margin-top">
+                <img id="main-image" alt="" style="width:100%">
+                <div class="w3-display-bottomright">
+                    <span id="family-label" class="w3-tag w3-blue" >Bouvier</span>
+                </div>
+                <div class="w3-display-bottomleft">
+                    <span id="category-label" class="w3-tag w3-red">Plat principal</span>
+                </div>
+            </div>
+            <div class="w3-container w3-white">
+                <h2><b id="recipe-title">Lorem Ipsum</b></h2>
+                <!--<a th:if="${recipe.recapSheet} != ''" th:href="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${recipe.recapSheet})}" target="_blank">Fiche pdf</a>-->
+                <!--<h5 th:if="${recipe.quantite} != ''"><u>Quantité:</u><span th:text="' ' + ${recipe.quantite}"></span></h5>-->
+                <!--<hr/>-->
+                <!--<div id="ingredients-lists">-->
+                    <!--<h3><u>Liste des ingrédients:</u></h3>-->
+                    <!--<div th:each="ingredientList : ${recipe.ingredientListCollection}">-->
+                        <!--<div>-->
+                            <!--<h5 th:if="${ingredientList.title} != ''" th:text="${ingredientList.title + ':'}"></h5>-->
+                            <!--<ul class="w3-ul">-->
+                                <!--<li th:text="${ingredient}" th:each="ingredient : ${ingredientList.ingredients}"></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<hr/>-->
+                <!--<h3><u>Etapes:</u></h3>-->
+                <!--<div th:each="stepList : ${recipe.stepListCollection}">-->
+                    <!--<div>-->
+                        <!--<h5 th:if="${stepList.title} != ''" th:text="${stepList.title + ':'}"></h5>-->
+                        <!--<ul class="w3-ul">-->
+                            <!--<li th:each="step, iStat : ${stepList.steps}">-->
+                                <!--<div class="w3-margin-bottom">-->
+                                    <!--<span class="w3-badge w3-green" th:text="${iStat.count}"></span><span class="w3-margin-left" th:utext="${step.text}"/>-->
+                                <!--</div>-->
+                                <!--<div th:if="${step.image != ''}" class="w3-margin-bottom">-->
+                                    <!--<img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${step.image})}" alt="" style="width:100%">-->
+                                <!--</div>-->
+                                <!--<div th:if="${step.video != ''}">-->
+                                    <!--<iframe width="100%" height="auto" th:src="${step.video}"-->
+                                            <!--frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+                                            <!--allowfullscreen>-->
+                                    <!--</iframe>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div id="chef-word-panel" class="w3-panel w3-border w3-round-xxlarge w3-serif w3-border-orange" th:if="${recipe.chefWord} != ''">-->
+                    <!--<p><i th:utext="'&quot;' + ${recipe.chefWord} + '&quot;'">"Make it as simple as possible, but not simpler."</i></p>-->
+                <!--</div>-->
+                <!--<div th:if="${recipe.videos.size() != 0}">-->
+                    <!--<h3><u>Vidéos:</u></h3>-->
+                    <!--<div th:each="video, iStat : ${recipe.videos}" class="w3-center">-->
+                        <!--<iframe width="100%" height="auto"-->
+                                <!--th:src="${video.src}">-->
+                        <!--</iframe>-->
+                        <!--<p th:text="${video.title}"></p>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            </div>
+            <!--<span th:data-popupid="${recipe.id}"-->
+                  <!--th:onclick="document.getElementById(this.getAttribute('data-popupid')).style.display='none'"-->
+                  <!--class="w3-button w3-red w3-display-topright">&times;</span>-->
+        </div>
+    </div>
+</template>
 </html>
 
 <!-- JS Script Section. DO NOT TOUCH ! -->
+<script src="/script/jquery-3.5.1.min.js"></script>
 <script type="text/JavaScript">
 
-// Get the modal
-var activeModal;
+    activeCatTagList=[];
+    activeFamilyTagList=[];
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == activeModal) {
-        activeModal.style.display = "none";
-    }
-};
+    function switchCatTag(checkBox, tagName){
 
-function openModal(modalId) {
-    activeModal = document.getElementById(modalId)
-    activeModal.style.display='block'
-}
+        if(checkBox.checked == 1){
+            activeCatTagList.push(tagName);
+        } else{
+            removeCatTag(tagName);
+        }
+        showActiveRecipes();
 
-activeCatTagList=[];
-activeFamilyTagList=[];
-    
-function switchCatTag(checkBox, tagName){
-    
-    if(checkBox.checked == 1){
-        activeCatTagList.push(tagName);
-    } else{
-        removeCatTag(tagName);
     }
-    showActiveRecipes();
-    
-}
-    
-function switchFamilyTag(checkBox, tagName){
-    
-    if(checkBox.checked == 1){
-        activeFamilyTagList.push(tagName);
-    } else{
-        removeFamilyTag(tagName);
+
+    function switchFamilyTag(checkBox, tagName){
+
+        if(checkBox.checked == 1){
+            activeFamilyTagList.push(tagName);
+        } else{
+            removeFamilyTag(tagName);
+        }
+        showActiveRecipes();
+
     }
-    showActiveRecipes();
-    
-}
-    
-function removeCatTag(tagName){
-    var index = activeCatTagList.indexOf(tagName);
- 
-    if (index > -1) {
-        activeCatTagList.splice(index, 1);
+
+    function removeCatTag(tagName){
+        var index = activeCatTagList.indexOf(tagName);
+
+        if (index > -1) {
+            activeCatTagList.splice(index, 1);
+        }
     }
-}
-    
-function removeFamilyTag(tagName){
-    var index = activeFamilyTagList.indexOf(tagName);
- 
-    if (index > -1) {
-        activeFamilyTagList.splice(index, 1);
+
+    function removeFamilyTag(tagName){
+        var index = activeFamilyTagList.indexOf(tagName);
+
+        if (index > -1) {
+            activeFamilyTagList.splice(index, 1);
+        }
     }
-}
-    
-function showActiveRecipes(){
-    let recipes = document.getElementsByClassName('fiche-recette');
-    let noRecipeBlock = document.getElementById('no-recipes');
-    noRecipeBlock.style.display = "none";
-    
-    if (activeCatTagList.length === 0 && activeFamilyTagList.length === 0){
-        for(recipe of recipes){
-            recipe.style.display = "block";
-        }  
-    } else{
-        let noRecipe = true;
-        for(recipe of recipes){
-            if(mustBeDiplayed(recipe)){
+
+    function showActiveRecipes(){
+        let recipes = document.getElementsByClassName('fiche-recette');
+        let noRecipeBlock = document.getElementById('no-recipes');
+        noRecipeBlock.style.display = "none";
+
+        if (activeCatTagList.length === 0 && activeFamilyTagList.length === 0){
+            for(recipe of recipes){
                 recipe.style.display = "block";
-                noRecipe = false;
-            } else {
-                recipe.style.display = "none";
+            }
+        } else{
+            let noRecipe = true;
+            for(recipe of recipes){
+                if(mustBeDiplayed(recipe)){
+                    recipe.style.display = "block";
+                    noRecipe = false;
+                } else {
+                    recipe.style.display = "none";
+                }
+            }
+            if(noRecipe){
+                noRecipeBlock.style.display = "block";
             }
         }
-        if(noRecipe){
-            noRecipeBlock.style.display = "block";
+    }
+
+    function mustBeDiplayed(recipe){
+        let catOK = true;
+        let familyOK = true;
+        if(activeCatTagList.length !== 0){
+            catOK = activeCatTagList.includes(recipe.getAttribute("tag-recette-cat"));
         }
+        if(activeFamilyTagList.length !== 0){
+            familyOK = activeFamilyTagList.includes(recipe.getAttribute("tag-recette-famille"));
+        }
+        return catOK && familyOK;
     }
-}
-    
-function mustBeDiplayed(recipe){
-    let catOK = true;
-    let familyOK = true;
-    if(activeCatTagList.length !== 0){
-        catOK = activeCatTagList.includes(recipe.getAttribute("tag-recette-cat"));
-    }
-    if(activeFamilyTagList.length !== 0){
-        familyOK = activeFamilyTagList.includes(recipe.getAttribute("tag-recette-famille"));
-    }
-    return catOK && familyOK;
-}
+
+    $(document).ready(function()
+    {
+        $(".fiche-recette").click(function () {
+            openModal($(this).attr('data-popupid'));
+        });
+
+        // Get the modal
+        var activeModal = $('#recipe-modal');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == activeModal[0]) {
+                activeModal.hide();
+            }
+        };
+
+        function openModal(modalId) {
+            activeModal.empty();
+
+            $.getJSON( window.location.href + "/recipe/"+modalId, function( recipe ) {
+                // On prépare une ligne pour le tableau
+                var template = $("#modal-content");
+
+                var node = template.prop('content');
+                var content = $(node).find('.w3-modal-content').clone();
+
+                fillRecipeModal(content, recipe);
+
+                activeModal.append(content);
+            });
+            activeModal.show();
+        }
+
+
+
+        function fillRecipeModal(modalContent, recipe) {
+            let bucketUrl = "https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/";
+
+            let mainImage = modalContent.find("#main-image");
+            mainImage.attr('src', bucketUrl + recipe.image);
+
+            let familyLabel = modalContent.find("#family-label");
+            familyLabel.text(recipe.family.label);
+
+            let categoryLabel = modalContent.find("#category-label");
+            categoryLabel.text(recipe.category.label);
+
+            let recipeTitleLabel = modalContent.find("#recipe-title");
+            recipeTitleLabel.text(recipe.title);
+        }
+    });
+
 
 </script>

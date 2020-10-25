@@ -4,7 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.guilhem.domain.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -38,24 +40,20 @@ public class MainController {
         return "page-recette";
     }
 
-    @RequestMapping("/db")
-    String db(Map<String, Object> model) {
-        try (Connection connection = dataSource.getConnection()) {
-            Statement stmt = connection.createStatement();
-            stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
-            stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-            ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
-
-            ArrayList<String> output = new ArrayList<String>();
-            while (rs.next()) {
-                output.add("Read from DB: " + rs.getTimestamp("tick"));
-            }
-
-            model.put("records", output);
-            return "db";
-        } catch (Exception e) {
-            model.put("message", e.getMessage());
-            return "error";
+    @RequestMapping("/recipe/{recipe-id}")
+    @ResponseBody
+    Recipe getRecipe(@PathVariable("recipe-id") String recipeId){
+        ObjectMapper mapper = new ObjectMapper();
+        URL recipesUrl = this.getClass().getResource( "/data/recipe-list.json");
+        List<Recipe> recipes = null;
+        Recipe result = null;
+        try {
+            recipes = mapper.readValue(recipesUrl, mapper.getTypeFactory().constructCollectionType(List.class, Recipe.class));
+            result = recipes.stream().filter(recipe -> recipe.getId().equals(recipeId)).findFirst().get();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        return result;
     }
+
 }

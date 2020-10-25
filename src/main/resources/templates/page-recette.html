@@ -25,7 +25,7 @@
   </div>
     
   <!-- Filter Section -->
-  <div class="w3-col w3-padding 16" id="filter_menu">
+  <div class="w3-col w3-padding-16" id="filter_menu">
 
       <div class="w3-row-padding" id="filters">
         <!-- Category filter list -->
@@ -66,12 +66,12 @@
   </div>    
   
   <!-- Recette List Section-->
-  <div class="w3-row-padding w3-col">
-    <div th:each="recipe : ${recipes}">
+  <div class="w3-row-padding w3-col w3-row">
+    <div th:each="recipe : ${recipes}" class="w3-col s12 m6 l4">
 
 
     <!-- Beginning of recipe-->  
-    <div class="fiche-recette w3-third w3-container w3-margin-bottom w3-card"
+    <div class="fiche-recette w3-container w3-margin-bottom w3-card"
          th:data-popupid="${recipe.id}"
          th:attr="tag-recette-cat=${recipe.category}, tag-recette-famille=${recipe.family}"  >
         <div class="w3-display-container w3-margin-top">
@@ -123,53 +123,7 @@
             </div>
             <div id="detail-container" class="w3-container w3-white">
                 <h2><b id="recipe-title">Lorem Ipsum</b></h2>
-                <!--<div id="ingredients-lists">-->
-                    <!--<h3><u>Liste des ingrédients:</u></h3>-->
-                    <!--<div th:each="ingredientList : ${recipe.ingredientListCollection}">-->
-                        <!--<div>-->
-                            <!--<h5 th:if="${ingredientList.title} != ''" th:text="${ingredientList.title + ':'}"></h5>-->
-                            <!--<ul class="w3-ul">-->
-                                <!--<li th:text="${ingredient}" th:each="ingredient : ${ingredientList.ingredients}"></li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<hr/>-->
-                <!--<h3><u>Etapes:</u></h3>-->
-                <!--<div th:each="stepList : ${recipe.stepListCollection}">-->
-                    <!--<div>-->
-                        <!--<h5 th:if="${stepList.title} != ''" th:text="${stepList.title + ':'}"></h5>-->
-                        <!--<ul class="w3-ul">-->
-                            <!--<li th:each="step, iStat : ${stepList.steps}">-->
-                                <!--<div class="w3-margin-bottom">-->
-                                    <!--<span class="w3-badge w3-green" th:text="${iStat.count}"></span><span class="w3-margin-left" th:utext="${step.text}"/>-->
-                                <!--</div>-->
-                                <!--<div th:if="${step.image != ''}" class="w3-margin-bottom">-->
-                                    <!--<img th:src="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${step.image})}" alt="" style="width:100%">-->
-                                <!--</div>-->
-                                <!--<div th:if="${step.video != ''}">-->
-                                    <!--<iframe width="100%" height="auto" th:src="${step.video}"-->
-                                            <!--frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
-                                            <!--allowfullscreen>-->
-                                    <!--</iframe>-->
-                                <!--</div>-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div id="chef-word-panel" class="w3-panel w3-border w3-round-xxlarge w3-serif w3-border-orange" th:if="${recipe.chefWord} != ''">-->
-                    <!--<p><i th:utext="'&quot;' + ${recipe.chefWord} + '&quot;'">"Make it as simple as possible, but not simpler."</i></p>-->
-                <!--</div>-->
-                <!--<div th:if="${recipe.videos.size() != 0}">-->
-                    <!--<h3><u>Vidéos:</u></h3>-->
-                    <!--<div th:each="video, iStat : ${recipe.videos}" class="w3-center">-->
-                        <!--<iframe width="100%" height="auto"-->
-                                <!--th:src="${video.src}">-->
-                        <!--</iframe>-->
-                        <!--<p th:text="${video.title}"></p>-->
-                    <!--</div>-->
-                <!--</div>-->
+                <!--Populate by js -->
 
             </div>
             <span id="close-icon"
@@ -352,8 +306,8 @@
 
             recipe["ingredients-lists"].forEach(function(list) {
                 let ingredientListElement = $("<div></div>");
-                if(ingredientListElement.title !== ''){
-                    ingredientListElement.append($("<h5></h5>").text(list.title))
+                if(list.title !== ''){
+                    ingredientListElement.append($("<h5></h5>").text(list.title));
                 }
                 ingredientListElement.append($("<ul></ul>").attr('class', 'w3-ul').attr('id', 'ingredient-list'));
 
@@ -366,7 +320,64 @@
         }
 
         function appendSteps(modalContent, recipe) {
+            let stepListContainer = `
+                <h3><u>Etapes:</u></h3>
+                <div id="steps-lists">
+                </div>
+            `;
+            modalContent.find("#detail-container").append(stepListContainer);
 
+            let $stepsListContainer = modalContent.find("#steps-lists");
+
+            let bucketUrl = "https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/";
+
+            recipe["steps-lists"].forEach(function(list) {
+                let stepListElement = $("<div></div>");
+                if(list.title !== ''){
+                    stepListElement.append($("<h5></h5>").text(list.title + ":"));
+                }
+                stepListElement.append($("<ul></ul>").attr('class', 'w3-ul').attr('id', 'step-list'));
+
+                let ingredientListUl = stepListElement.find("#step-list");
+                list.steps.forEach(function(step, index){
+                    ingredientListUl.append($("<li></li>").attr("id", "step-"+index));
+
+                    let stepElement = ingredientListUl.find("#step-"+index);
+
+                    let textElement = `
+                        <div class="w3-margin-bottom">
+                            <span class="w3-badge w3-green">${index+1}</span><span class="w3-margin-left">${step.text}</span>
+                        </div>
+                    `;
+
+                    stepElement.append(textElement);
+
+                    if(step.image !== ''){
+                        let imageElement = `
+                            <div class="w3-margin-bottom">
+                                <img src="${bucketUrl+step.image}" alt="" style="width:100%">
+                            </div>
+                        `;
+
+                        stepElement.append(imageElement);
+                    }
+
+                    if(step.video !== ''){
+                        let videoElement = `
+                            <div>
+                                <iframe width="100%" height="auto" src="${step.video}"
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        `;
+
+                        stepElement.append(videoElement);
+                    }
+
+                });
+                $stepsListContainer.append(stepListElement);
+            });
         }
 
         function appendChefWord(modalContent, recipe) {
@@ -383,6 +394,30 @@
         }
 
         function appendVideos(modalContent, recipe) {
+            if(recipe.videos.length !== 0){
+                let recipeVideosContainer = `
+                <div id="videos-container">
+                    <h3><u>Vidéos:</u></h3>
+                </div>
+                `;
+
+                modalContent.find("#detail-container").append(recipeVideosContainer);
+
+                let $recipeVideosContainer = modalContent.find("#videos-container");
+
+                recipe.videos.forEach(function (video) {
+                    let videoElement = `
+                    <div class="w3-center">
+                        <iframe width="100%" height="auto"
+                                src="${video.src}">
+                        </iframe>
+                        <p>${video.title}</p>
+                    </div>
+                    `;
+
+                    $recipeVideosContainer.append(videoElement);
+                });
+            }
 
         }
     });

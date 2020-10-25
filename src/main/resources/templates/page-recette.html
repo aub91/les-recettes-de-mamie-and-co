@@ -121,11 +121,8 @@
                     <span id="category-label" class="w3-tag w3-red">Plat principal</span>
                 </div>
             </div>
-            <div class="w3-container w3-white">
+            <div id="detail-container" class="w3-container w3-white">
                 <h2><b id="recipe-title">Lorem Ipsum</b></h2>
-                <!--<a th:if="${recipe.recapSheet} != ''" th:href="@{https://recettes-de-mamie-assets.s3.us-east-2.amazonaws.com/{path}(path=${recipe.recapSheet})}" target="_blank">Fiche pdf</a>-->
-                <!--<h5 th:if="${recipe.quantite} != ''"><u>Quantité:</u><span th:text="' ' + ${recipe.quantite}"></span></h5>-->
-                <!--<hr/>-->
                 <!--<div id="ingredients-lists">-->
                     <!--<h3><u>Liste des ingrédients:</u></h3>-->
                     <!--<div th:each="ingredientList : ${recipe.ingredientListCollection}">-->
@@ -175,9 +172,8 @@
                 <!--</div>-->
 
             </div>
-            <!--<span th:data-popupid="${recipe.id}"-->
-                  <!--th:onclick="document.getElementById(this.getAttribute('data-popupid')).style.display='none'"-->
-                  <!--class="w3-button w3-red w3-display-topright">&times;</span>-->
+            <span id="close-icon"
+                  class="w3-button w3-red w3-display-topright">&times;</span>
         </div>
     </div>
 </template>
@@ -285,7 +281,6 @@
             activeModal.empty();
 
             $.getJSON( window.location.href + "/recipe/"+modalId, function( recipe ) {
-                // On prépare une ligne pour le tableau
                 var template = $("#modal-content");
 
                 var node = template.prop('content');
@@ -314,8 +309,81 @@
 
             let recipeTitleLabel = modalContent.find("#recipe-title");
             recipeTitleLabel.text(recipe.title);
+
+            let closeIcon = modalContent.find("#close-icon");
+            closeIcon.click(function(){
+                activeModal.hide();
+            });
+
+            if(recipe["recap-sheet"] !== ''){
+                let recapSheetLink = $("<a></a>").attr('id', 'recap-sheet').attr('href', bucketUrl+recipe["recap-sheet"]).attr('target', '_blank').text("Fiche pdf");
+                modalContent.find("#detail-container").append(recapSheetLink);
+            }
+
+            if(recipe.quantite !== ''){
+                let quantityLabel = `
+                <h5>
+                    <u>Quantité:</u><span>${' '+recipe.quantite}</span>
+                </h5>
+                `;
+                modalContent.find("#detail-container").append(quantityLabel);
+            }
+
+            appendIngredientList(modalContent, recipe);
+            appendSteps(modalContent, recipe);
+            appendChefWord(modalContent, recipe);
+            appendVideos(modalContent, recipe);
+        }
+
+        function appendIngredientList(modalContent, recipe) {
+            let ingredientListContainer = `
+                <hr/>
+                <div id="ingredients-lists">
+                    <h3><u>Liste des ingrédients:</u></h3>
+                    <div id="ingredient-list-container">
+
+                    </div>
+                </div>
+                <hr/>
+            `;
+            modalContent.find("#detail-container").append(ingredientListContainer);
+
+            let $ingredientListContainer = modalContent.find("#ingredients-lists");
+
+            recipe["ingredients-lists"].forEach(function(list) {
+                let ingredientListElement = $("<div></div>");
+                if(ingredientListElement.title !== ''){
+                    ingredientListElement.append($("<h5></h5>").text(list.title))
+                }
+                ingredientListElement.append($("<ul></ul>").attr('class', 'w3-ul').attr('id', 'ingredient-list'));
+
+                let ingredientListUl = ingredientListElement.find("#ingredient-list");
+                list.ingredients.forEach(function(ingredient){
+                    ingredientListUl.append($("<li></li>").text(ingredient));
+                });
+                $ingredientListContainer.append(ingredientListElement);
+            });
+        }
+
+        function appendSteps(modalContent, recipe) {
+
+        }
+
+        function appendChefWord(modalContent, recipe) {
+            if(recipe["chef_word"] !== ''){
+                let chefWord = `
+                <div id="chef-word-panel" class="w3-panel w3-border w3-round-xxlarge w3-serif w3-border-orange">
+                    <p>
+                        <i>${"&quot;" + recipe["chef_word"] + "&quot;"}</i>
+                    </p>
+                </div>
+                `;
+                modalContent.find("#detail-container").append(chefWord);
+            }
+        }
+
+        function appendVideos(modalContent, recipe) {
+
         }
     });
-
-
 </script>

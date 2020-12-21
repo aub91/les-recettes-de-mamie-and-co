@@ -793,8 +793,8 @@
   {
     "id": "couscous",
     "title": "Couscous de mamie",
-    "image": "mamie/couscous/couscousfinal.jpg",
-    "image-mini": "mamie/couscous/pelemele.jpg",
+    "image": "mamie/couscous/pelemele.jpg",
+    "image-mini": "mamie/couscous/couscousfinal.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "MAMIE",

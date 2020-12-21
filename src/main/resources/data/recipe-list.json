@@ -679,25 +679,24 @@
     ]
   },
   {
-    "id": "boulettes",
-    "title": "Les boulettes",
-    "image": "bouvier/Poisson_malais/Pelemelemalais.jpg",
-    "image-mini": "bouvier/Poisson_malais/Pelemelemalais.jpg",
+    "id": "chaussons_blettes",
+    "title": "Les chaussons aux blettes d'Alexandre",
+    "image": "alcover/chaussonsblettes/Pelemelechausson.jpg",
+    "image-mini": "alcover/chaussonsblettes/Pelemelechausson.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
-    "family": "BOUVIER",
-    "recap-sheet": "",
+    "family": "ALCOVER",
+    "recap-sheet": "alcover/chaussonsblettes/chaussonsblettes.pdf",
     "ingredients-lists": [
       {
         "title": "",
         "ingredients": [
-          "Une grosse gousse d’ail", "Une dizaine de branches de Persil", "500g de viande hachée (24 petites boulettes)",
-          "Un morceau de pain rassi", "Un petit bol de lait", "Un oeuf", "Du sel", "Du poivre pour ceux qui aiment",
-          "De la farine", "De l’huile"
+          "250g de farine", "80g de beurre mou", "1 jaune d'oeuf", "2 cuillerées d'huile d'olive", "Un peu d'eau",
+          "Une botte de blettes", "Un brocciu frais (facultatif)", "Sel et poivre"
         ]
       }
     ],
-    "quantite": "4 personnes",
+    "quantite": "",
     "steps-lists": [
       {
         "title": "",
@@ -705,51 +704,41 @@
           {
             "image": "",
             "video": "",
-            "text": "Commencer par faire une persillade en mélangeant le persil ciselé et l’ail finement haché. Réserver."
+            "text": "Préparer la pâte: créer un puits dans la farine, y déposer le beurre, le jaune d'oeuf, l'huile d'olive et un peu d'eau. Pétrir."
           },
           {
-            "image": "",
+            "image": "alcover/chaussonsblettes/blettes.jpg",
             "video": "",
-            "text": "Découper le pain rassis en petits morceaux et les faire tremper dans le lait pour bien les ramollir."
+            "text": "Faire cuire les feuilles de blettes à l'eau ou à la vapeur et bien les presser. Saler et poivrer. Ajouter si possible un beau morceau de brocciu frais."
           },
           {
-            "image": "",
+            "image": "alcover/chaussonsblettes/etirer.jpg",
             "video": "",
-            "text": "Dans un saladier, mélanger le pain bien essoré avec la viande hachée, puis faites y un puit."
+            "text": "Sur un plan fariné, étirer la pâte. Y découper des carrés ou des cercles."
           },
           {
-            "image": "",
+            "image": "alcover/chaussonsblettes/preparer.jpg",
             "video": "",
-            "text": "Dans ce dernier y verser l’oeuf et la persillade, mélangez les avec un doigt."
+            "text": "Mettre une cuillère du mélange sur une moitié puis replier."
           },
           {
-            "image": "",
+            "image": "alcover/chaussonsblettes/cru.jpg",
             "video": "",
-            "text": "Une fois l’oeuf bien battu avec le persil et l’ail, saler et poivrer puis mélanger le tout."
+            "text": "Souder chaque chausson avec une fourchette après avoir humidifier les côtés."
           },
           {
-            "image": "",
+            "image": "alcover/chaussonsblettes/cuits.jpg",
             "video": "",
-            "text": "Formez les boulettes en roulant une petite quantité de viande entre vos mains, les fariner."
-          },
-          {
-            "image": "",
-            "video": "",
-            "text": "Dans une poêle créer un bain d’huile. Une fois l’huile bien chaude (il faut pouvoir la voir ou l’entendre crépiter) faire frire les boulettes."
-          },
-          {
-            "image": "",
-            "video": "",
-            "text": "Une fois bien cuites les déposer sur du papier absorbant. "
+            "text": "Enfourner à 200°C pour environ 15 min."
           }
         ]
       }
     ],
-    "chef_word": "Les boulettes de mamie sont à déguster avec une sauce tomate et du riz ou des pâtes ! <br/>Petit tips de la cuisinière : si votre huile devient trop chaude, baissez le feu et rajoutez de l’huile, ça refroidira le contenu de la poêle ! <br/><br/>Bon appetit !",
+    "chef_word": "La mozzarella permet l'onctuosité et le fromage à pâte persillée donne du caractère aux pâtes.<br/>N'hésitez pas à faire des tests en optant pour d'autres fromages tout en respectant les proportions.",
     "videos": [
       {
-        "title": "i am a video",
-        "src": "/videos/test.mp4"
+        "title": "",
+        "src": "https://www.youtube.com/embed/9CTBUOZ76jg"
       }
     ]
   },

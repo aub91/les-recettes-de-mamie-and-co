@@ -734,12 +734,60 @@
         ]
       }
     ],
-    "chef_word": "La mozzarella permet l'onctuosité et le fromage à pâte persillée donne du caractère aux pâtes.<br/>N'hésitez pas à faire des tests en optant pour d'autres fromages tout en respectant les proportions.",
+    "chef_word": "",
     "videos": [
+    ]
+  },
+  {
+    "id": "saute_veau",
+    "title": "Sauté de veau aux olives",
+    "image": "bouvier/sauteveau/finalsaute.jpg",
+    "image-mini": "bouvier/sauteveau/pelemelesaute.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "BOUVIER",
+    "recap-sheet": "bouvier/sauteveau/sauteveauolives.pdf",
+    "ingredients-lists": [
       {
         "title": "",
-        "src": "https://www.youtube.com/embed/9CTBUOZ76jg"
+        "ingredients": [
+          "600 à 800g d'épaule de veau (ou autre morceau pour cuisson longue)", "150g d'olives noires (ou vertes selon les goûts)",
+          "400g de pulpe de tomates confites séchées", "50g de vin blanc sec", "2 gousses d'ail", "1 oignon", "3 feuilles de sauge fraîche",
+          "1 branche de romarin", "1 feuille de laurier", "1 c. à c. de fond de veau en poudre", "Quelques feuilles de sarriette",
+          "Quelques graines de fenouil", "Huile d'olive", "Sel et poivre", "Sucre"
+        ]
       }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "bouvier/sauteveau/veaumarmitte.jpg",
+            "video": "",
+            "text": "Couper la viande en cubes de tailles moyennes. Faire revenir les morceaux dans une grande cocotte jusqu'à ce qu’ils soient dorés."
+          },
+          {
+            "image": "bouvier/sauteveau/oignonsmarmitte.jpg",
+            "video": "",
+            "text": "Enlever la viande, faire dorer quelques minutes l’oignon et l’ail haché, le romarin, la sauge et le laurier. L'idée est de faire caraméliser les sucs un peu comme on ferait avec le soffritto d’une bolognaise."
+          },
+          {
+            "image": "bouvier/sauteveau/sauce.jpg",
+            "video": "",
+            "text": "Déglacer au vin blanc et décoller tous les sucs de cuisson pour récolter tous les parfums. Laisser le vin s’évaporer presque entièrement, puis ajouter la pulpe de tomates ainsi que les tomates confites. Laisser cuire quelques minutes puis remettre la viande. Saler légèrement, ajouter le sucre, le fond de veau en poudre, les graines de fenouil, environ 200 g d’eau (la moitié de la boîte de pulpe) et laisser cuire 1h.<br/>À mi-cuisson, ajouter les olives.<br/>Vérifier la cuisson, la viande doit être moelleuse."
+          },
+          {
+            "image": "bouvier/sauteveau/finalsaute.jpg",
+            "video": "",
+            "text": "Servir avec un son accompagnement, ici des pâtes."
+          }
+        ]
+      }
+    ],
+    "chef_word": "L’éternelle question : cuire à couvert ou non ? Eh bien c’est comme d’habitude en cuisine, ça dépend. L’objectif étant que la sauce réduise et devienne bien épaisse. Donc si elle est très liquide, laissez cuire sans couvercle !<br/>Pour le service, c’est comme vous le sentez. Pommes de terre, riz, des légumes de saison… Moi je le sers avec des pâtes creuses dans lesquelles la sauce va venir se cacher. Ensuite je dépose quelques feuilles de sarriette par dessus (voire un peu de menthe fraîche)",
+    "videos": [
     ]
   },
   {

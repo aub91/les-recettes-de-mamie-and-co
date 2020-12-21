@@ -741,8 +741,8 @@
   {
     "id": "saute_veau",
     "title": "Sauté de veau aux olives",
-    "image": "bouvier/sautedeveau/finalsaute.jpg",
-    "image-mini": "bouvier/sautedeveau/pelemelesaute.jpg",
+    "image": "bouvier/sautedeveau/pelemelesaute.jpg",
+    "image-mini": "bouvier/sautedeveau/finalsaute.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
@@ -787,6 +787,61 @@
       }
     ],
     "chef_word": "L’éternelle question : cuire à couvert ou non ? Eh bien c’est comme d’habitude en cuisine, ça dépend. L’objectif étant que la sauce réduise et devienne bien épaisse. Donc si elle est très liquide, laissez cuire sans couvercle !<br/>Pour le service, c’est comme vous le sentez. Pommes de terre, riz, des légumes de saison… Moi je le sers avec des pâtes creuses dans lesquelles la sauce va venir se cacher. Ensuite je dépose quelques feuilles de sarriette par dessus (voire un peu de menthe fraîche)",
+    "videos": [
+    ]
+  },
+  {
+    "id": "couscous",
+    "title": "Couscous de mamie",
+    "image": "mamie/couscous/couscousfinal.jpg",
+    "image-mini": "mamie/couscous/pelemele.jpg",
+    "category": "PLAT_PRINCIPAL",
+    "tags":[],
+    "family": "MAMIE",
+    "recap-sheet": "mamie/couscous/couscousmamie.pdf",
+    "ingredients-lists": [
+      {
+        "title": "",
+        "ingredients": [
+          "1,5kg d'agneau", "4 carottes", "4 courgettes", "2 poivrons", "1 oignon", "1 boîte de pois chiches", "Concentré de tomate",
+          "Harissa", "1kg de semoule de couscous moyen"
+        ]
+      }
+    ],
+    "quantite": "",
+    "steps-lists": [
+      {
+        "title": "",
+        "steps": [
+          {
+            "image": "mamie/couscous/avanteau.jpg",
+            "video": "",
+            "text": "Faire dorer la viande dans un peu d’huile puis faire revenir les légumes coupés en tronçons sauf les courgettes."
+          },
+          {
+            "image": "mamie/couscous/eau.jpg",
+            "video": "",
+            "text": "Ajouter 2 cuillères à soupe de concentré de tomates, remuer puis couvrir d’eau. Saler et poivrer."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Laisser cuire 30 minutes et ajouter les courgettes.<br/>Vérifier la cuisson des courgettes et ajouter les pois-chiches.<br/>En fin de cuisson, égoutter au dessus d’un récipient."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Dans un bol, mettre deux cuillères de harissa et diluer avec une grosse louche de bouillon."
+          },
+          {
+            "image": "",
+            "video": "",
+            "text": "Préparer la semoule :<br/>Verser dans l’équivalent de 3 grands verres de semoule dans un saladier et ajouter 3 grands verres d’eau chaude salée.<br/>Couvrir et laisser gonfler la graine 15 minutes. A l’aide d’une fourchette séparer les grains en soulevant la graine au fond."
+          }
+        ]
+      }
+    ],
+    "chef_word": "Chauffer au micro-ondes en ajoutant une bonne noix de beurre, ce sera meilleur.",
     "videos": [
     ]
   },

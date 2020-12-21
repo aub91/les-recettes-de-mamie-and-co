@@ -741,12 +741,12 @@
   {
     "id": "saute_veau",
     "title": "Sauté de veau aux olives",
-    "image": "bouvier/sauteveau/finalsaute.jpg",
-    "image-mini": "bouvier/sauteveau/pelemelesaute.jpg",
+    "image": "bouvier/sautedeveau/finalsaute.jpg",
+    "image-mini": "bouvier/sautedeveau/pelemelesaute.jpg",
     "category": "PLAT_PRINCIPAL",
     "tags":[],
     "family": "BOUVIER",
-    "recap-sheet": "bouvier/sauteveau/sauteveauolives.pdf",
+    "recap-sheet": "bouvier/sautedeveau/sauteveauolives.pdf",
     "ingredients-lists": [
       {
         "title": "",
@@ -764,22 +764,22 @@
         "title": "",
         "steps": [
           {
-            "image": "bouvier/sauteveau/veaumarmitte.jpg",
+            "image": "bouvier/sautedeveau/veaumarmitte.jpg",
             "video": "",
             "text": "Couper la viande en cubes de tailles moyennes. Faire revenir les morceaux dans une grande cocotte jusqu'à ce qu’ils soient dorés."
           },
           {
-            "image": "bouvier/sauteveau/oignonsmarmitte.jpg",
+            "image": "bouvier/sautedeveau/oignonsmarmitte.jpg",
             "video": "",
             "text": "Enlever la viande, faire dorer quelques minutes l’oignon et l’ail haché, le romarin, la sauge et le laurier. L'idée est de faire caraméliser les sucs un peu comme on ferait avec le soffritto d’une bolognaise."
           },
           {
-            "image": "bouvier/sauteveau/sauce.jpg",
+            "image": "bouvier/sautedeveau/sauce.jpg",
             "video": "",
             "text": "Déglacer au vin blanc et décoller tous les sucs de cuisson pour récolter tous les parfums. Laisser le vin s’évaporer presque entièrement, puis ajouter la pulpe de tomates ainsi que les tomates confites. Laisser cuire quelques minutes puis remettre la viande. Saler légèrement, ajouter le sucre, le fond de veau en poudre, les graines de fenouil, environ 200 g d’eau (la moitié de la boîte de pulpe) et laisser cuire 1h.<br/>À mi-cuisson, ajouter les olives.<br/>Vérifier la cuisson, la viande doit être moelleuse."
           },
           {
-            "image": "bouvier/sauteveau/finalsaute.jpg",
+            "image": "bouvier/sautedeveau/finalsaute.jpg",
             "video": "",
             "text": "Servir avec un son accompagnement, ici des pâtes."
           }

@@ -2,28 +2,19 @@ package org.guilhem.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.guilhem.domain.Recipe;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.sql.DataSource;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
 @Controller
 public class MainController {
-    @Autowired
-    private DataSource dataSource;
-
     @RequestMapping("/")
     String index(Map<String, Object> model) {
         ObjectMapper mapper = new ObjectMapper();

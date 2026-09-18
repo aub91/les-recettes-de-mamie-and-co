@@ -1,4 +1,4 @@
-package org.guilhem.domain;
+package org.guilhem.recipe.domain;
 
 /**
  * A recipe's step

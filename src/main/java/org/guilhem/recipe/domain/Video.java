@@ -1,4 +1,4 @@
-package org.guilhem.domain;
+package org.guilhem.recipe.domain;
 
 /**
  * A video file of a recipe.

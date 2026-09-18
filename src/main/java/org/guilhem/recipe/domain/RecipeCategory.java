@@ -1,4 +1,4 @@
-package org.guilhem.domain;
+package org.guilhem.recipe.domain;
 
 public enum RecipeCategory {
     PLAT_PRINCIPAL ("Plat principal"),

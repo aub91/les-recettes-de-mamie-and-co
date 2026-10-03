@@ -22,7 +22,15 @@ public class Order {
         this.ingredientList.addAll(ingredients);
     }
 
+    public Long getTotalPrice() {
+        return totalPrice;
+    }
+
     public void setTotalPrice(Long price) {
         this.totalPrice = price;
+    }
+
+    public UUID getId() {
+        return id;
     }
 }

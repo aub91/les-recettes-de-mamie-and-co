@@ -7,11 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @Controller
 public class RecipeController {
@@ -36,7 +36,7 @@ public class RecipeController {
 
     @PostMapping("/recipe/{recipe-id}/order")
     @ResponseBody
-    Order orderRecipe(@PathVariable("recipe-id") String recipeId){
+    UUID orderRecipe(@PathVariable("recipe-id") String recipeId){
         return recipeService.order(recipeId);
     }
 

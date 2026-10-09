@@ -5,35 +5,48 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import org.guilhem.order.OrderCompleted;
+import org.guilhem.order.OrderRecipe;
 import org.guilhem.order.domain.Order;
-import org.guilhem.purchase.PurchaseManagementAPI;
-import org.guilhem.purchase.dto.PurchaseDto;
+import org.guilhem.purchase.PurchaseCompleted;
+import org.guilhem.purchase.PurchaseIngredient;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.modulith.events.ApplicationModuleListener;
 import org.springframework.stereotype.Service;
 
 @Service
 public class OrderManagement {
 
-    private PurchaseManagementAPI purchaseManagementAPI;
+    ApplicationEventPublisher eventPublisher;
 
     private Map<UUID, Order> orderMap = new HashMap<>();
 
-    public OrderManagement(PurchaseManagementAPI purchaseManagementAPI) {
-        this.purchaseManagementAPI = purchaseManagementAPI;
+    public OrderManagement(ApplicationEventPublisher eventPublisher) {
+        this.eventPublisher = eventPublisher;
     }
 
-    public UUID orderRecipe(List<String> ingredientList){
-        Order order = new Order();
-
-        ingredientList.forEach(ingredient -> {
-            order.addIngredient(ingredient);
-            UUID purchaseId = purchaseManagementAPI.purchaseIngredient(ingredient);
-            PurchaseDto purchase = purchaseManagementAPI.getPurchase(purchaseId);
-            order.setTotalPrice(order.getTotalPrice() + purchase.price());
-        });
+    @ApplicationModuleListener
+    public void on(OrderRecipe orderRecipe){
+        Order order = new Order(orderRecipe.recipeId());
 
         orderMap.put(order.getId(), order);
 
-        return order.getId();
+        orderRecipe.ingredientList().forEach(ingredient -> {
+            order.addIngredient(ingredient);
+        });
+
+        for (String ingredient : orderRecipe.ingredientList()) {
+            eventPublisher.publishEvent(new PurchaseIngredient(order.getId(), ingredient));
+        }
+    }
+
+    @ApplicationModuleListener 
+    public void on(PurchaseCompleted purchaseCompleted) {
+        Order order = orderMap.get(purchaseCompleted.orderId());
+        order.getIngredientMap().put(purchaseCompleted.ingredientId(), purchaseCompleted.price());
+        if(order.isCompleted()) {
+            eventPublisher.publishEvent(new OrderCompleted(order.getRecipeId(), order.getId()));
+        }
     }
 
     public Order getOrder(UUID orderId) {

@@ -1,32 +1,44 @@
 package org.guilhem.purchase.service;
 
 import java.rmi.server.UID;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import org.guilhem.purchase.PurchaseCompleted;
+import org.guilhem.purchase.PurchaseIngredient;
 import org.guilhem.purchase.domain.Purchase;
 import org.guilhem.purchase.dto.PurchaseDto;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.modulith.events.ApplicationModuleListener;
 import org.springframework.stereotype.Service;
 
 @Service 
 public class PurchaseManagement {
+    private ApplicationEventPublisher eventPublisher;
+
     Map<UUID, Purchase> purchaseMap = new HashMap<>();
 
     List<String> providers = List.of("Amazon", "Auchan", "Leclerc", "Carrefour");
 
-    public UUID purchaseIngredient(String ingredientName) {
-        Collections.shuffle(providers);
+    public PurchaseManagement(ApplicationEventPublisher eventPublisher) {
+        this.eventPublisher = eventPublisher;
+    }
+
+    @ApplicationModuleListener 
+    public void on(PurchaseIngredient purchaseIngredient) {
+        Collections.shuffle(new ArrayList<>(providers));
         String randomProvider = providers.get(0);
-        Purchase purchase = new Purchase(ingredientName, randomProvider, getRandomPrice());
+        Purchase purchase = new Purchase(purchaseIngredient.ingredientName(), randomProvider, getRandomPrice());
 
         purchaseMap.put(purchase.getId(), purchase);
 
-        System.out.println("Purchase made: " + purchase);
+        System.out.println(String.format("Purchase made: %s, %s, %d", purchase.getIngredientName(), purchase.getProvider(), purchase.getPrice()));
         
-        return purchase.getId();
+        eventPublisher.publishEvent(new PurchaseCompleted(purchaseIngredient.orderId(), purchaseIngredient.ingredientName(), purchase.getPrice()));
     }
 
     public PurchaseDto getPurchase(UUID purchaseId) {

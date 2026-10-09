@@ -34,10 +34,10 @@ public class RecipeController {
         return recipeService.getById(recipeId);
     }
 
-    @PostMapping("/recipe/{recipe-id}/order")
+    @GetMapping("/recipe/{recipe-id}/order")
     @ResponseBody
-    UUID orderRecipe(@PathVariable("recipe-id") String recipeId){
-        return recipeService.order(recipeId);
+    void orderRecipe(@PathVariable("recipe-id") String recipeId){
+        recipeService.order(recipeId);
     }
 
 }

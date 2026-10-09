@@ -6,21 +6,24 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.UUID;
 
-import org.guilhem.order.OrderManagementAPI;
+import org.guilhem.order.OrderCompleted;
+import org.guilhem.order.OrderRecipe;
 import org.guilhem.recipe.domain.IngredientList;
 import org.guilhem.recipe.domain.Recipe;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.modulith.events.ApplicationModuleListener;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
 public class RecipeService {
-    private OrderManagementAPI orderManagement;
+    private ApplicationEventPublisher eventPublisher;
 
-    public RecipeService(OrderManagementAPI orderManagement) {
-        this.orderManagement = orderManagement;
+    public RecipeService(ApplicationEventPublisher eventPublisher) {
+        this.eventPublisher = eventPublisher;
     }
     public List<Recipe> getAll() {
         try {
@@ -49,7 +52,8 @@ public class RecipeService {
         return result;
     }
 
-    public UUID order(String recipeId) {
+    @Transactional 
+    public void order(String recipeId) {
         ObjectMapper mapper = new ObjectMapper();
         URL recipesUrl = this.getClass().getResource( "/data/recipe-list.json");
         List<Recipe> recipes = null;
@@ -58,13 +62,20 @@ public class RecipeService {
             recipes = mapper.readValue(recipesUrl, mapper.getTypeFactory().constructCollectionType(List.class, Recipe.class));
             recipe = recipes.stream().filter(recip -> recip.getId().equals(recipeId)).findFirst().get();
 
-            return orderManagement.orderRecipe(
-                recipe.getIngredientListCollection().stream()
-                .map(IngredientList::getIngredients)
-                .flatMap(Collection::stream).toList()
-            );
+            eventPublisher.publishEvent(
+                new OrderRecipe(
+                    recipe.getId(), 
+                    recipe.getIngredientListCollection().stream()
+                        .map(IngredientList::getIngredients)
+                        .flatMap(Collection::stream).toList()
+                ));
         } catch (IOException e) {
             throw new RuntimeException("Failed to create order");
         }
+    }
+
+    @ApplicationModuleListener 
+    public void on(OrderCompleted orderCompleted) {
+        System.out.println(String.format("Order completed for recipe %s: %s", orderCompleted.recipeId(), orderCompleted.orderId()));
     }
 }

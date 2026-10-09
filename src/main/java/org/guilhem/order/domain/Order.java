@@ -1,8 +1,8 @@
 package org.guilhem.order.domain;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 public class Order {
@@ -10,27 +10,35 @@ public class Order {
 
     private LocalDateTime date = LocalDateTime.now();
 
-    private List<String> ingredientList = new ArrayList<>();
+    private Map<String, Long> ingredientMap = new HashMap<>();
 
-    private Long totalPrice;
+    private String recipeId;
 
-    public void addIngredient(String ingredient) {
-        this.ingredientList.add(ingredient);
+    public Order(String recipeId) {
+        this.recipeId = recipeId;
     }
 
-    public void addIngredients(List<String> ingredients) {
-        this.ingredientList.addAll(ingredients);
+    public void addIngredient(String ingredient) {
+        this.ingredientMap.put(ingredient, null);
+    }
+
+    public Map<String, Long> getIngredientMap() {
+        return ingredientMap;
+    }
+
+    public String getRecipeId() {
+        return recipeId;
     }
 
     public Long getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(Long price) {
-        this.totalPrice = price;
+        return this.ingredientMap.values().stream().mapToLong(Long::longValue).sum();
     }
 
     public UUID getId() {
         return id;
+    }
+
+    public boolean isCompleted() {
+        return this.ingredientMap.values().stream().noneMatch(price -> price == null);
     }
 }
